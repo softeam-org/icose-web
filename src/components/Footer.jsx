@@ -1,9 +1,9 @@
-import logoImage from "../components/assets/LOGO-ICOSE.svg"
-import logoName from "../components/assets/LOGO-ICOSE-NAME.svg"
-import logoSofteam from "../components/assets/LOGO-SOFTEAM.svg"
-import tel from "../components/assets/tel.svg"
-import email from "../components/assets/email.svg"
-import arrow from "../components/assets/arrow-right.svg"
+import logoImage from "../assets/LOGO-ICOSE.svg"
+import logoName from "../assets/LOGO-ICOSE-NAME.svg"
+import logoSofteam from "../assets/LOGO-SOFTEAM.svg"
+import tel from "../assets/tel.svg"
+import email from "../assets/email.svg"
+import arrow from "../assets/arrow-right.svg"
 
 import React from "react"
 
