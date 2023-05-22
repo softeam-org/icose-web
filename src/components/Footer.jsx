@@ -78,7 +78,7 @@ function Footer() {
       </div>
       <div className="flex bg-stone-900 h-20 font-inter text-white text-sm place-content-center items-center justify-around">
         <h3>
-          Copyright @ 2023 ICOSE - Instituto Comunitário de Sergipe. CNPJ: 12.345.678/0001-00
+          Copyright © 2023 ICOSE - Instituto Comunitário de Sergipe. CNPJ: 12.345.678/0001-00
         </h3>
         <h3 className="flex items-center">
           Desenvolvido por Softeam <img src={logoSofteam} alt="Logo Softeam"/> 
