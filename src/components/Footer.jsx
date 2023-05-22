@@ -10,7 +10,7 @@ function Footer() {
     <footer className="bg-standard-blue">
       <div className="mx-32 mb-10 flex flex-row gap-5 h-80">
         <div className="font-inter text-white w-2/5">
-          <div className="flex mt-7">
+          <div className="flex mt-7 gap-4">
             <img src={logoImage} alt="Logo Icose"/>
             <img src={logoName} alt="nome Icose"/>
           </div>
