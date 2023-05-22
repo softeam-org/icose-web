@@ -1,4 +1,4 @@
-export function NavBar() {
+function NavBar() {
   return (
     <nav className="my-auto select-none">
       <ul className="flex gap-5 font-inter text-white text-xl">
@@ -24,4 +24,6 @@ export function NavBar() {
     </nav>
   );
 }
+
+export default NavBar;
 

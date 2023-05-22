@@ -1,8 +1,8 @@
 import logoImage from "../assets/LOGO-ICOSE.svg"
 import logoName from "../assets/LOGO-ICOSE-NAME.svg"
-import { NavBar } from "./NavBar";
+import NavBar from "./NavBar";
 
-export function Header() {
+function Header() {
   return (
     <div className="sticky inset-x-0 top-0 bg-standard-blue">
       <div className="mx-12 py-7 flex justify-between">
@@ -18,4 +18,6 @@ export function Header() {
     </div>
   );
 }
+
+export default Header;
 
