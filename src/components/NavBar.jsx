@@ -1,24 +1,26 @@
+import { Link } from "react-router-dom";
+
 function NavBar() {
   return (
     <nav className="my-auto select-none">
       <ul className="flex gap-5 font-inter text-white text-xl">
         <li className="nav-link"> 
-          Início
+          <Link to="/">Início</Link>
         </li>
         <li className="nav-link"> 
-          Sobre
+          <Link to="/sobre">Sobre</Link>
         </li>
         <li className="nav-link">
-          Editais
+          <Link to="/editais">Editais</Link>
         </li>
         <li className="nav-link">
-          Transferências
+          <Link to="/transferencias">Transferências</Link>
         </li>
         <li className="nav-link">
-          Parceiros
+          <Link to="/parceiros">Parceiros</Link>
         </li>
         <li className="nav-link">
-          Doe aqui
+          <Link to="/doacao">Doe Aqui</Link>
         </li>
       </ul>
     </nav>
