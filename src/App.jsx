@@ -28,7 +28,7 @@ function App() {
       </Suspense>
       <Footer/>
     </div>
-  ) 
+  );
 }
 
 export default App;
