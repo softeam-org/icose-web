@@ -1,5 +1,5 @@
-import logoImage from "../assets/LOGO-ICOSE.svg"
-import logoName from "../assets/LOGO-ICOSE-NAME.svg"
+import logoImage from "@/assets/LOGO-ICOSE.svg"
+import logoName from "@/assets/LOGO-ICOSE-NAME.svg"
 import NavBar from "./NavBar";
 
 function Header() {
