@@ -64,7 +64,7 @@ function Footer() {
             Beatae nisi at animi.
           </h3>
         </div>
-        <div className="font-inter text-white mt-10 xl:mt-14 w-72">
+        <div className="font-inter text-white mt-10 xl:mt-14 w-72 ">
           <h2>DOE AQUI</h2>
           <h3 className="Donation mmt-7 xl:mt-10">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
