@@ -4,25 +4,3 @@
 @tailwind base;
 @tailwind utilities;
 
-@layer components {
-  .nav-link {
-    position: relative;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  .nav-link::after {
-    content: '';
-    position: absolute;
-    bottom: 0.1rem;
-    left: 0;
-    border-bottom: 1px solid white;
-    width: 0%;
-    transition: width .1s;
-    pointer-events: none;
-  }
-
-  .nav-link:hover::after {
-    width: 100%;
-  }
-}
