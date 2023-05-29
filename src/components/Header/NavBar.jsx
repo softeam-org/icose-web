@@ -10,6 +10,7 @@ function NavBar() {
   const links = pages.map(page => {
     return (
       <PageLink 
+        key={page.name}
         name={page.name}
         route={page.route}
         onClick={() => setIsNavOpen(false)}
@@ -26,7 +27,7 @@ function NavBar() {
         weight="bold"
       />
       <nav className={(isNavOpen ? "left-0 " : "-left-80 ") + "w-80 text-standard-blue bg-white fixed inset-y-0 xl:my-auto xl:text-white xl:p-0 xl:w-auto xl:bg-inherit xl:static xl:block select-none z-20 transition-[left] duration-300 ease-in-out"}>
-        <div className="overflow-y-auto h-full p-8">
+        <div className="overflow-y-auto h-full p-8 xl:p-0">
           <X 
             onClick={() => setIsNavOpen(false)}
             className="block xl:hidden mb-4 ml-auto cursor-pointer z-30"
