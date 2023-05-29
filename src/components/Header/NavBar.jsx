@@ -34,7 +34,7 @@ function NavBar() {
             size={32}
             weight="bold"
           />
-          <ul className="flex flex-col items-start font-black gap-10 xl:flex-row text-xl font-inter">
+          <ul className="flex flex-col items-start font-black gap-10 xl:flex-row text-xl">
             {links}
           </ul>
         </div>
