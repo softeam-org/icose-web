@@ -12,6 +12,7 @@ export default {
       },
       colors: {
         'standard-blue' : '#1E3A8A',
+        'background-section' : '#F4F4F4'
       }
     },
   },
