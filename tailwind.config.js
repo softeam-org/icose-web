@@ -4,11 +4,14 @@ export default {
   theme: {
     fontFamily: {
       'montserrat' : ['Montserrat', 'sans-serif'],
-      'inter': ['Inter', 'sans-serif']
+      'inter': ['Inter', 'sans-serif'],
     },
     extend: {
+      backgroundImage: {
+        'map' : "url('@/assets/map.svg')",
+      },
       colors: {
-        'standard-blue' : '#1E3A8A'
+        'standard-blue' : '#1E3A8A',
       }
     },
   },
