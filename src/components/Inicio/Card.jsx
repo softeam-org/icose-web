@@ -13,10 +13,9 @@ function Card({icon, title, text}) {
         <Title 
           underlineColor="#F59E0B"
           content={cardTitle}
-       />
+        />
         <div className="text-[#545454] text-xl">{text}</div>
       </div>
-      
     </div> 
   );
 }
