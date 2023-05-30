@@ -6,8 +6,8 @@ function Home() {
   return (
     <div className="flex-1 bg-background-section">
       <div className="w-full h-0 pt-[50%] bg-map bg-no-repeat bg-cover bg-center xl:p-0 xl:h-[50rem]"></div>
-      <div className="mx-44">
-        <div className="flex gap-16 my-28 flex-col xl:flex-row">
+      <div className="mx-auto max-w-[110rem] px-12">
+        <div className="flex gap-10 xl:gap-16 my-12 xl:my-28 flex-col min-[800px]:flex-row">
           <Card 
             icon={<Target size={32} />}
             title={"NOSSA MISSÃO"}
