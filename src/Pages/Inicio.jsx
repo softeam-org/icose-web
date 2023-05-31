@@ -13,7 +13,7 @@ function Home() {
         alt="Mapa de Sergipe"
       />
       <div className="bg-background-section">
-        <div className="flex flex-col gap-10 xl:gap-20 py-10 xl:py-20 mx-auto max-w-[110rem] px-12">
+        <div className="flex flex-col gap-10 xl:gap-20 py-10 xl:py-20 mx-auto max-w-[100rem] px-12">
           <div className="flex gap-8 flex-col xl:gap-16 min-[800px]:flex-row">
             <Card
               icon={<Target size={32} />}
