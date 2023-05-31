@@ -31,7 +31,7 @@ function Home() {
           <div className="flex flex-col gap-6 xl:gap-8">
             <Title 
               color="standard-blue"
-              content="Conheça o Icose"
+              content="Conheça o Icose:"
             /> 
             <p className="font-medium text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et turpis non metus interdum rutrum. Phasellus eros erat, tristique id felis eget, dignissim malesuada mauris. Quisque a justo diam. Phasellus in vestibulum risus. Nunc felis dui, bibendum in tortor eu, tincidunt viverra justo. Nullam pellentesque leo eget tristique efficitur.</p>
             <div className="flex flex-col xl:flex-row gap-8 xl:gap-10">
