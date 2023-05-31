@@ -1,4 +1,4 @@
-import { Target, Heart } from "@phosphor-icons/react";
+import { Envelope, Phone, Target, Heart } from "@phosphor-icons/react";
 import Card from "@/components/Inicio/Card"
 import PlusButton from "@/components/Inicio/PlusButton";
 import Title from "@/components/Title"
@@ -12,7 +12,8 @@ function Home() {
         src={map}
         alt="Mapa de Sergipe"
       />
-      <div className="bg-background-section">
+
+      <section className="bg-background-section">
         <div className="flex flex-col gap-10 xl:gap-20 py-10 xl:py-20 mx-auto max-w-[100rem] px-12">
           <div className="flex gap-8 flex-col xl:gap-16 min-[800px]:flex-row">
             <Card
@@ -47,8 +48,22 @@ function Home() {
             <p className="font-medium text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et turpis non metus interdum rutrum. Phasellus eros erat, tristique id felis eget, dignissim malesuada mauris. Quisque a justo diam. Phasellus in vestibulum risus. Nunc felis dui, bibendum in tortor eu, tincidunt viverra justo. Nullam pellentesque leo eget tristique efficitur.</p>
             <p className="font-medium text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et turpis non metus interdum rutrum. Phasellus eros erat, tristique id felis eget, dignissim malesuada mauris. Quisque a justo diam. Phasellus in vestibulum risus. Nunc felis dui, bibendum in tortor eu, tincidunt viverra justo. Nullam pellentesque leo eget tristique efficitur.</p>
           </div>
+
+          <div className="flex flex-col gap-4 items-center text-2xl font-bold">
+            <p>Fale conosco:</p>
+            <div className="flex gap-2 flex-col lg:flex-row items-center lg:justify-around w-full">
+              <div className="flex gap-2 items-center">
+                <Envelope size={32} />
+                <p className="text-center">email@email.com.br</p>
+              </div>
+              <span className="flex gap-2 items-center">
+                <Phone size={32} />
+                <p className="text-center">(79) 3223-2159 (Para recados)</p>
+              </span>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }
