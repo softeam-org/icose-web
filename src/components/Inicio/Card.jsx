@@ -11,7 +11,7 @@ function Card({icon, title, text}) {
     <div className="flex-1 bg-[#FBFBFB] shadow-md rounded-xl">
       <div className="flex flex-col gap-8 p-8">
         <Title 
-          underlineColor="#F59E0B"
+          color="#F59E0B"
           content={cardTitle}
         />
         <div className="text-[#545454] text-xl">{text}</div>
