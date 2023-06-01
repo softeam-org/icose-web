@@ -20,11 +20,6 @@ export const pages = [
     filename: "Transferencias",
   },
   {
-    name: "Parceiros",
-    route: "/parceiros",
-    filename: "Parceiros",
-  },
-  {
     name: "Doe Aqui",
     route: "/doacao",
     filename: "Doacao",
