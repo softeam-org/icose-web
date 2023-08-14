@@ -13,7 +13,7 @@ const routes = pages.map(e => {
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen font-inter">
       <Header/>
       <Suspense fallback={<Loading />}>
         <Routes>
