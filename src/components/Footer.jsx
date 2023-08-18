@@ -38,7 +38,7 @@ function Footer() {
             <div className="mt-7 xl:mt-10">
               <ul>
                 <li className="flex items-center">
-                  <img src={arrow} alt="flecha apontando para direita"/> Editais
+                  <img src={arrow} alt="flecha apontando para direita"/> Projetos
                 </li>
                 <li className="mt-4 xl:mt-7 flex items-center">
                   <img src={arrow} alt="flecha apontando para direita"/> Parceiros

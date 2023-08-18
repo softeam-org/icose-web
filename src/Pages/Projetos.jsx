@@ -1,4 +1,4 @@
-function Notices() {
+function Projects() {
   return (
     <div className="flex-1 flex justify-center items-center text-5xl">
       <div> Work in progress... 🚧🏗️ </div>
@@ -6,5 +6,5 @@ function Notices() {
   );
 }
 
-export default Notices;
+export default Projects;
 
