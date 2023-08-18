@@ -6,6 +6,9 @@ pnpm install
 pnpm run dev
 ```
 
+## Design
+- https://www.figma.com/file/PiVdHNWYKilCXFFkVtpfyl/ICOSE
+
 ## Tecnologias usadas
 - React
 - Tailwind CSS
@@ -30,3 +33,4 @@ pnpm run dev
 - Camel Case
 - Ícones: Phosphor https://phosphoricons.com/
 - Não reinventem a roda: daisyUI https://daisyui.com/
+
