@@ -8,8 +8,8 @@ import arrow from "../assets/arrow-right.svg"
 function Footer() {
   return (
     <footer className="bg-standard-blue">
-      <div className="flex mx-10 mb-10 xl:mx-32 flex-col xl:flex-row">
-        <div className="font-inter text-white w-2/5">
+      <div className="flex md:flex-wrap mx-10 mb-10 justify-between xl:mx-32 flex-col md:flex-row xl:flex-nowrap gap-5">
+        <div className="font-inter text-white w-96">
           <div className="flex mt-7 gap-4">
             <img src={logoImage} alt="Logo Icose" className="h-20 xl:h-16"/>
             <img src={logoName} alt="nome Icose"/>
