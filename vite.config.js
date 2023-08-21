@@ -6,14 +6,11 @@ import path from 'path';
 export default defineConfig({
   resolve: {
     alias: {
-// <<<<<<< HEAD
-      '@': path.resolve(__dirname, './src' ),
-      'data': path.resolve(__dirname, './data' ),
-// =======
+
       '~': path.resolve(__dirname, './'),
       '@': path.resolve(__dirname, './src'),
       'data': path.resolve(__dirname, './data'),
-// >>>>>>> 8c25e2b393eebbc300688fb4efd9772d0935a555
+
     },
   },
   plugins: [react()],
