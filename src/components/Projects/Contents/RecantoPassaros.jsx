@@ -10,7 +10,7 @@ function Project_RecantoPassaros() {
         nunc ac vehicula bibendum, urna magna condimentum velit, faucibus euismod odio lectus a turpis. 
         Vivamus lacinia felis a erat posuere, ac pulvinar ligula pretium. Vivamus nec varius est. Nam 
         dapibus sodales orci non faucibus. Etiam viverra pellentesque risus, vel consectetur dolor dictum 
-        posuere.</p>  
+        posuere.</p>
     </div>
   );
 }
