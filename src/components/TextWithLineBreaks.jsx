@@ -1,12 +1,12 @@
 import React from 'react';
 
-function TextWithLineBreaks({ text }) {
+function TextWithLineBreaks({ text, classText}) {
   const lines = text.split('\n');
 
   return (
-    <div className="text-center">
+    <div className={classText}>
       {lines.map((line, index) => (
-        <p key={index} className="">
+        <p key={index} >
           {line}
         </p>
       ))}
