@@ -9,7 +9,7 @@ function Carousel() {
 	return (
 
 			<div>
-				<div className="carousel carousel-center w-full flex py-8 space-x-10">
+				<div className="carousel  w-full flex py-8 space-x-10">
 					<div id="item1" className="flex flex-row carousel-item w-full space-x-10">
 						<div className="w-1/3 ">
 							<img src="src\assets\news.svg" className="w-full" />
