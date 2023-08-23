@@ -1,7 +1,6 @@
 function Project_RecantoPassaros() {
   return (
     <div>
-      <h2 className="font-bold">Projeto Recanto dos Pássaros</h2>
       <p>Donec tincidunt justo ut luctus fringilla. Etiam non ligula id tortor congue facilisis. Sed 
         elementum tincidunt purus, a interdum augue posuere ut. Phasellus et eros eros. Proin porta 
         efficitur ultricies. Duis justo justo, iaculis vel placerat nec, tristique et enim. Maecenas 
