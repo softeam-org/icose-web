@@ -1,19 +1,18 @@
-import { lazy, Suspense } from "react";
-import Loading from "@/components/Loading";
 import { projects } from "data/projects";
+import Project from "./Project";
 
 function ProjectRender() {
-  return (
+
+  return(
     <div className="project-render flex flex-col gap-8">
-      {projects.map((project) => {
-        const ProjectComponent = lazy(() => import(`./Contents/${project.filename}.jsx`));
+      {projects.map(project => {
+        const ProjectTitle = project.title;
+        const ProjectFileName = project.filename;
         return (
           <div className='project-content' key={project.filename}>
-            <Suspense fallback={<Loading />}>
-              <ProjectComponent />
-            </Suspense>
+            <Project title={ProjectTitle} file={ProjectFileName}  />
           </div>
-        );
+        )
       })}
     </div>
   );
