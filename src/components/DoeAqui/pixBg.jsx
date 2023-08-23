@@ -12,7 +12,7 @@ function PixBg() {
       <h1>
         <Title color="#1E3A8A" content="Faça sua doação" />
       </h1>
-      <h2 className="text-lg">
+      <h2 className="text-lg px-52">
         Todo valor arrecadado será repassado para projetos sociais.
       </h2>
       <div className="relative rounded-3xl grid gap-8 xl:gap-16 min-[800px] w-full h-auto bg-[#37B4AA] text-white">
