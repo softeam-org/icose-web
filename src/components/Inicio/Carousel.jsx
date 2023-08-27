@@ -50,11 +50,11 @@ function Carousel() {
   };
 
   return (
-		
+
     <div className='flex flex-col'>
       <div className='flex flex-row justify-center items-center space-x-5'>
 			<div className='w-10'>
-					<img src="src\assets\arrow-circle-left.svg" alt="arrow-right" onClick={handleLeftClick} className='w-8 hover:w-9' />
+					<img src="src\assets\arrow-circle-left.svg" alt="arrow-right" onClick={handleLeftClick} className='w-8 hover:w-9 cursor-pointer' />
 				</div>
         <div className="carousel carousel-center w-10/12 flex py-8 space-x-10" ref={carousel} onScroll={handleCarouselScroll}>
           {data.map((slide, slideIndex) => (
@@ -77,7 +77,7 @@ function Carousel() {
           ))}
         </div>
 				<div className='w-10'>
-					<img src="src\assets\arrow-circle-right.svg" alt="arrow-right" onClick={handleRightClick} className='w-8 hover:w-9' />
+					<img src="src\assets\arrow-circle-right.svg" alt="arrow-right" onClick={handleRightClick} className='w-8 hover:w-9 cursor-pointer	' />
 				</div>
       </div>
 
@@ -86,9 +86,8 @@ function Carousel() {
         {data.map((_, slideIndex) => (
           <span
             key={slideIndex}
-            htmlFor={`radio${slideIndex}`}
-            className={`btn w-1 p-1 h-0 min-h-0 rounded-full ${
-              currentIndex === slideIndex ? 'bg-black' : 'border-solid border-black'
+            className={` w-2 h-2 rounded-full ${
+              currentIndex === slideIndex ? 'bg-black' : 'bg-white border border-solid border-black'
             }`}
           >
           </span>
