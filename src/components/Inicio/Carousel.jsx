@@ -50,6 +50,7 @@ function Carousel() {
   };
 
   return (
+		
     <div className='flex flex-col'>
       <div className='flex flex-row justify-center items-center space-x-5'>
 			<div className='w-10'>
