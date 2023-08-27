@@ -44,7 +44,7 @@ function Community() {
       <div className="mt-20 flex flex-col gap-16">
         <Title 
           color="orange-500"
-          content="Apoiadores:"
+          content="Apoiadores"
         />
         <div className="flex justify-center flex-row gap-20">
           <img className="" src={idis} alt="Logo da apoiadora IDIS"/>
