@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import {ArrowCircleRight, CaretCircleLeft, CaretCircleRight } from "@phosphor-icons/react";
+import { CaretCircleLeft, CaretCircleRight } from "@phosphor-icons/react";
 
 function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
