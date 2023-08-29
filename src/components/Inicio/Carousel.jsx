@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import {ArrowCircleRight, CaretCircleLeft, CaretCircleRight } from "@phosphor-icons/react";
 
 function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -50,11 +51,17 @@ function Carousel() {
   };
 
   return (
-
+    
     <div className='flex flex-col'>
       <div className='flex flex-row justify-center items-center space-x-5'>
 			<div className='w-10'>
-					<img src="src\assets\arrow-circle-left.svg" alt="arrow-right" onClick={handleLeftClick} className='w-8 hover:w-9 cursor-pointer' />
+        <div className='w-9'>
+          <CaretCircleLeft
+            size={32}
+            onClick={handleLeftClick}
+            className='w-8 hover:w-9 hover:h-9 hover:fill-standard-blue  cursor-pointer'
+          />
+         </div>
 				</div>
         <div className="carousel carousel-center w-10/12 flex py-8 space-x-10" ref={carousel} onScroll={handleCarouselScroll}>
           {data.map((slide, slideIndex) => (
@@ -76,9 +83,14 @@ function Carousel() {
             </div>
           ))}
         </div>
-				<div className='w-10'>
-					<img src="src\assets\arrow-circle-right.svg" alt="arrow-right" onClick={handleRightClick} className='w-8 hover:w-9 cursor-pointer	' />
-				</div>
+        <div className='w-9'>
+          <CaretCircleRight
+            size={32}
+            onClick={handleRightClick}
+            className='w-8 hover:w-9 hover:h-9 hover:fill-standard-blue  cursor-pointer'
+          />
+        </div>
+				
       </div>
 
       {/* Radio buttons */}
