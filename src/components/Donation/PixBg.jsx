@@ -1,41 +1,41 @@
-// import qrCode from "@/assets//qr-code.svg"
+import qrCode from "@/assets//qr-code.svg"
 import Title from "@/components/Title"
-// import logoImage from "@/assets/LOGO-ICOSE.svg"
-// import logoPix from "@/assets/logo-pix.svg"
-// import BackgroundWhite from "@/components/backgroundWhite"
+import logoImage from "@/assets/LOGO-ICOSE.svg"
+import logoPix from "@/assets/logo-pix.svg"
+import BackgroundWhite from "./BackgroundWhite"
 
 
 function PixBg() {
   return (
-    <div className="flex flex-col gap-10 xl:gap-10 pb-10 pt-10 xl:pt-20 max-w-[100rem] px-10 xl:px-52">
+    <div className="flex flex-col gap-14 max-w-[100rem] justify-center mx-10 sm:mx-20 md:mx-40 xl:mx-52 mt-10 mb-24">
       <h1>
         <Title color="#1E3A8A" content="Faça sua doação" />
       </h1>
       <h2 className="text-lg">
         Todo valor arrecadado será repassado para projetos sociais.
       </h2>
-      <div className="relative rounded-3xl grid gap-8 xl:gap-16 min-[800px] w-full h-auto bg-[#37B4AA] text-white">
-        <div className="flex flex-col items-center justify-center min-[800px] py-8 gap-3">
+      <div className="rounded-3xl grid gap-8 xl:gap-16 min-[800px] w-full h-auto bg-[#37B4AA] text-white">
+        <div className="flex flex-col items-center py-12 gap-3">
           <h1 className="mt-10 text-lg font-bold mr-3">
             DOE AQUI VIA PIX
           </h1>
-          {/* <div className="flex flex-rol gap-2 mr-2">
+          <div className="flex flex-rol w-1/5 gap-2 justify-center">
             <img
-              className="h-20 xl:h-16"
+              className="w-1/2"
               src={logoPix}
               alt="logo do Pix"
             />
             <img
-              className="h-20 xl:h-16"
+              className="w-1/2"
               src={logoImage}
               alt="logo da icose"
             />
           </div>
-          <p>
+          <p className="w-1/2 text-center">
             Faça aqui sua doação via PIX para o ICOSE
           </p>
           <img
-            className="w-52 h-52 m"
+            className="w-1/4"
             src={qrCode}
             alt="Qr-code para doações da icose"
           />
@@ -58,7 +58,7 @@ function PixBg() {
               <br/>
               C/C: 23.968-2
             </p>
-          </BackgroundWhite> */}
+          </BackgroundWhite>
           <div className="mt-10 space-y-4 w-3/4">
             <h1 className="font-bold text-xl">
               Instruções para realizar transferência PIX:
