@@ -3,15 +3,15 @@ import PixBg from "../components/Donation/PixBg";
 
 function Donation() {
   return (
-    <div className="flex flex-wrap flex-col">
-      <div className="relative">
+    <div className="flex flex-col items-center">
+      <div className="relative w-full h-screen mb-24">
         <img
-          className="object-cover w-[640px] h-[320px] sm:w-[1024px] sm:h-[512px] lg:w-[1280px] lg:h-[640px] xl:w-full xl:h-[40rem]"
+          className="object-cover w-full h-full"
           src={womenWorkin}
           alt="Mulher trabalhando em serviço comunitário"
         />
-        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 xl:w-full xl:h-[40rem]">
-          <p className="text-white text-2xl md:text-4xl lg:text-4xl xl:text-6xl	font-bold px-6 w-3/4 h-4/6 tracking-wide leading-tight">
+        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
+          <p className="text-white text-2xl md:text-4xl lg:text-4xl xl:text-6xl	font-bold px-6 w-3/4 h-4/6 py-10 tracking-wide leading-tight">
             Todo valor arrecadado no território em 2023 será integralmente repassado para iniciativas selecionadas através do mapeamento e/ou edital.
           </p>
         </div>
