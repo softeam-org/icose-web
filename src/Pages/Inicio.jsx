@@ -1,4 +1,5 @@
 import map from "@/assets/map.svg"
+import Logo_Icose_2 from "@/assets/Logo_Icose_2.svg"
 import Cards from "@/components/Inicio/Cards"
 import Presentation from "@/components/Inicio/Presentation"
 import ContactUs from "@/components/Inicio/ContactUs"
@@ -8,11 +9,26 @@ import News from "@/components/Inicio/News"
 function Home() {
   return (
     <div className="flex-1 text-2xl">
-      <img
-        className="object-cover w-[640px] h-[320px] sm:w-[1024px] sm:h-[512px] lg:w-[1280px] lg:h-[640px] xl:w-full xl:h-[50rem]"
-        src={map}
-        alt="Mapa de Sergipe"
-      />
+      <section className="bg-[#2C3E50]">
+        <div className="flex flex-col gap-12 pt-20 items-center justify-between mx-auto max-w-[100rem] xl:flex-row xl:pt-0">
+          <div className="flex items-center justify-center w-full">
+            <img
+              className=""
+              src={Logo_Icose_2}
+              alt="Logo Icose"
+            />
+          </div>
+          <div className="flex items-center justify-center w-full">
+            <img
+              className="h-[480px] xl:h-auto"
+              src={map}
+              alt="Mapa de Sergipe"
+            />
+          </div>
+        </div>
+      </section>
+      
+      
 
       <section className="bg-background-section">
         <h2 className="flex w-full pt-20 font-semibold text-xl justify-center">
