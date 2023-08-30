@@ -1,6 +1,7 @@
 import logoImage from "@/assets/LOGO-ICOSE.svg"
 import logoName from "@/assets/LOGO-ICOSE-NAME.svg"
 import logoSofteam from "@/assets/LOGO-SOFTEAM.svg"
+import { Link } from "react-router-dom";
 import { Envelope } from "@phosphor-icons/react";
 import { Phone } from "@phosphor-icons/react";
 import { ArrowRight } from "@phosphor-icons/react";
@@ -8,13 +9,15 @@ import { ArrowRight } from "@phosphor-icons/react";
 function Footer() {
   return (
     <footer className="bg-standard-blue">
-      <div className="flex md:flex-wrap mx-10 mb-10 justify-between content-center md:mx-20 xl:mx-32 flex-col md:flex-row xl:flex-nowrap gap-5">
+      <div className="flex md:flex-wrap mx-10 mb-10 justify-between content-center md:mx-20 xl:mx-32 flex-col md:flex-row lg:flex-nowrap xl:flex-nowrap gap-5">
         <div className="font-inter text-white w-auto md:w-80">
           <div className="flex mt-10 gap-4">
-            <img src={logoImage} alt="Logo Icose" className="h-20 xl:h-16" />
-            <img src={logoName} alt="nome Icose" />
+            <Link to="/">
+              <img src={logoImage} alt="Logo Icose" className="h-20 xl:h-16" />
+              <img src={logoName} alt="nome Icose" />
+            </Link>
           </div>
-          <h1 className="font-Montserrat text-white w-auto md:w-64 xl:w-80 text-xl xl:text-base">
+          <h1 className="font-Montserrat text-white mt-2 w-auto md:w-64 xl:w-80 text-xl xl:text-base">
             INSTITUTO COMUNITÁRIO DE SERGIPE
           </h1>
           <h3 className="mt-4 w-auto md:w-64 xl:w-80 text-lg xl:text-base">
@@ -30,28 +33,25 @@ function Footer() {
             <Envelope size={32} /> email@email.com
           </h2>
         </div>
-        <div className="font-inter text-white mt-7 md:mt-[10%] xl:mt-14 md:w-80 xl:w-52">
+        <div className="font-inter text-white mt-7 md:mt-14 xl:mt-14 md:w-80 xl:w-52">
           <h2>
             DESTAQUES
           </h2>
-          <div className="mt-7 md:w-80 xl:mt-10">
+          <div className="mt-7 xl:mt-10">
             <ul>
               <li className="flex items-center gap-2">
-                <ArrowRight size={32} />  Editais
+                <ArrowRight size={32} /> <Link to="/sobre">Sobre</Link>
               </li>
-              <li className="mt-4 flex items-center gap-2">
-                <ArrowRight size={32} />  Parceiros
+              <li className="mt-6 flex items-center gap-2">
+                <ArrowRight size={32} />  <Link to="/projetos">Projetos</Link>
               </li>
-              <li className="mt-4 flex items-center gap-2">
-                <ArrowRight size={32} />  Governança
-              </li>
-              <li className="mt-4 flex items-center gap-2">
-                <ArrowRight size={32} />  Transparência
+              <li className="mt-6 flex items-center gap-2">
+                <ArrowRight size={32} />  <Link to="/comunitario">Comunitário</Link>
               </li>
             </ul>
           </div>
         </div>
-        <div className="font-inter text-white mt-7 md:mt-[10%] xl:mt-14 md:w-80 w-72">
+        <div className="font-inter text-white mt-7 md:mt-14 xl:mt-14 md:w-80 w-72">
           <h2>TITULO</h2>
           <h3 className="Titulo mt-7 xl:mt-10">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -62,7 +62,7 @@ function Footer() {
             Beatae nisi at animi.
           </h3>
         </div>
-        <div className="font-inter text-white mt-7 md:mt-[10%] xl:mt-14 md:w-80 w-72">
+        <div className="font-inter text-white mt-7 md:mt-14 xl:mt-14 md:w-80 w-72">
           <h2>DOE AQUI</h2>
           <h3 className="Donation mmt-7 xl:mt-10">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -70,7 +70,7 @@ function Footer() {
             sed.
           </h3>
           <button className="rounded-lg bg-amber-500 h-14 w-48 shadow-xl mt-7 text-2xl font-bold">
-            DOE AQUI
+            <Link to="/doacao">Doe Aqui</Link>
           </button>
         </div>
       </div>
