@@ -1,25 +1,35 @@
-import Card from "@/components/Inicio/Card"
-import { Target } from "@phosphor-icons/react";
-import { Heart } from "@phosphor-icons/react";
+import map from "@/assets/map.svg"
+import Cards from "@/components/Inicio/Cards"
+import Presentation from "@/components/Inicio/Presentation"
+import ContactUs from "@/components/Inicio/ContactUs"
+import Mapping from "@/components/Inicio/Mapping";
+import News from "@/components/Inicio/News"
 
 function Home() {
   return (
-    <div className="flex-1 bg-background-section">
-      <div className="w-full h-0 pt-[50%] bg-map bg-no-repeat bg-cover bg-center xl:p-0 xl:h-[50rem]"></div>
-      <div className="mx-auto max-w-[110rem] px-12">
-        <div className="flex gap-10 xl:gap-16 my-12 xl:my-28 flex-col min-[800px]:flex-row">
-          <Card 
-            icon={<Target size={32} />}
-            title={"NOSSA MISSÃO"}
-            text={"Promover o fortalecimento do protagonismo das comunidades locais e a atuação em rede, visando o desenvolvimento justo, solidário e sustentável de Sergipe."}
-          />
-          <Card 
-            icon={<Heart size={32} weight="fill" />}
-            title={"NOSSOS VALORES"}
-            text={"Ética, solidariedade, inovação, transparência e comprometimento"}
-          />
+    <div className="flex-1 text-2xl">
+      <img 
+        className="object-cover w-[640px] h-[320px] sm:w-[1024px] sm:h-[512px] lg:w-[1280px] lg:h-[640px] xl:w-full xl:h-[50rem]"
+        src={map}
+        alt="Mapa de Sergipe"
+      />
+
+      <section className="bg-background-section">
+        <div className="flex flex-col gap-10 xl:gap-20 pb-10 pt-10 xl:pt-20 mx-auto max-w-[100rem] px-12">
+          <Cards />
+          <Presentation />
+          <ContactUs />
         </div>
-      </div>
+      </section>
+
+      <section>
+        <div className="flex flex-col gap-16 pt-10 pb-10 xl:pb-20 mx-auto max-w-[100rem] px-12">
+          <Mapping />
+        </div>
+      </section>
+      <section className="flex justify-center flex-col	bg-background-section items-center py-8">
+        <News/>
+      </section>
     </div>
   );
 }
