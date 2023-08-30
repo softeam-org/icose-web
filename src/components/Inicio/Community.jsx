@@ -43,7 +43,7 @@ function Community() {
 
       <div className="mt-20 flex flex-col gap-16">
         <Title 
-          color="orange-500"
+          color="#F59E0B"
           content="Apoiadores"
         />
         <div className="flex justify-center flex-row gap-20">
