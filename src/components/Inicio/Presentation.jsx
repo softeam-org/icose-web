@@ -1,27 +1,56 @@
-import PlusButton from "@/components/Inicio/PlusButton";
+import ArrowList from "@/components/Inicio/ArrowList";
 import Title from "@/components/Title"
+import InformativoIcose from "@/assets/InformativoIcose.svg";
 
 function Presentation() {
+
+  const items = [
+    'de forma transparente na diversidade de causas e temas;',
+    'identificar, reunir, fortalecer e assessorar as ONG e/ou iniciativas de pessoas físicas que atuem na nossa comunidade de forma responsável;',
+    'promover o intercâmbio e parcerias entre organizações da sociedade civil, órgãos públicos e privados e pessoas físicas;',
+    'incentivar a prática da doação, voluntariado e engajamento comunitário;',
+    'promover os valores humanos universais, como a ética, a solidariedade, a generosidade entre outros valores;',
+    'fomentar o empreendedorismo e o desenvolvimento de iniciativas inovadoras sociais, culturais, educacionais, produtivas, esportivas e ambientais;',
+    'criar um fundo de recursos que proporcione sustentabilidade de suas ações e constitua um ativo permanente para investimentos socioambientais comunitários em Sergipe.'
+  ];
+
   return (
-    <div className="flex flex-col gap-6 xl:gap-8">
-      <Title 
-        color="standard-blue"
-        content="Conheça o Icose:"
-      /> 
-      <p className="font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et turpis non metus interdum rutrum. Phasellus eros erat, tristique id felis eget, dignissim malesuada mauris. Quisque a justo diam. Phasellus in vestibulum risus. Nunc felis dui, bibendum in tortor eu, tincidunt viverra justo. Nullam pellentesque leo eget tristique efficitur.</p>
-      <div className="flex flex-col xl:flex-row gap-8 xl:gap-10">
-        <video className="flex-1" width="" height="" controls></video>
-        <div className="flex-1 flex flex-col gap-4">
-          <h4 className="font-bold">Fortalecimento comunitário</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et turpis non metus interdum rutrum. Phasellus eros erat, tristique id felis eget, dignissim malesuada mauris. </p>
-          <div className="flex flex-col gap-4">
-            <PlusButton />
-            <PlusButton />
-          </div>
-        </div> 
+    <div className="flex gap-16 my-5 flex-col min-[800px]:flex-col ">
+      <div>
+        <h1>
+          <Title
+            color="#1E3A8A"
+            content="No Que Acreditamos"
+          />
+        </h1>
+        <div className="flex flex-col gap-8 text-xl">
+          <p className="mt-8">
+            Acreditamos que a REAL TRANSFORMAÇÃO SOCIAL, requer VALORES HUMANOS e ENGAJAMENTO da comunidade,
+            um processo que se inicia no humano e se expande através das suas AÇÕES na comunidade.
+          </p>
+          <p>
+            O Instituto Comunitário de Sergipe – ICOSE foi criado para trabalhar COM a comunidade,
+            não para a comunidade. JUNTOS somos mais criativos, mais eficazes e mais fortes.
+          </p>
+        </div>
       </div>
-      <p className="font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et turpis non metus interdum rutrum. Phasellus eros erat, tristique id felis eget, dignissim malesuada mauris. Quisque a justo diam. Phasellus in vestibulum risus. Nunc felis dui, bibendum in tortor eu, tincidunt viverra justo. Nullam pellentesque leo eget tristique efficitur.</p>
-      <p className="font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et turpis non metus interdum rutrum. Phasellus eros erat, tristique id felis eget, dignissim malesuada mauris. Quisque a justo diam. Phasellus in vestibulum risus. Nunc felis dui, bibendum in tortor eu, tincidunt viverra justo. Nullam pellentesque leo eget tristique efficitur.</p>
+      <div>
+        <h1>
+          <Title
+            color="#1E3A8A"
+            content="Proposta de Atuação"
+          />
+        </h1>
+        <div className="flex flex-col gap-8 text-xl">
+          <p className="mt-8">
+            Nossa proposta é atuar EM SERGIPE:
+          </p>
+          <ArrowList items={items} />
+        </div>
+        <div className="flex justify-center my-[10%]">
+          <img src={InformativoIcose} alt="Imagem informativa da icose " className="w-3/5 h-auto" />
+        </div>
+      </div>
     </div>
   );
 }
