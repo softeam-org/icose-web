@@ -10,14 +10,14 @@ function Footer() {
   return (
     <footer className="bg-standard-blue">
       <div className="flex md:flex-wrap mx-10 mb-10 justify-between content-center md:mx-20 xl:mx-32 flex-col md:flex-row lg:flex-nowrap xl:flex-nowrap gap-5">
-        <div className="font-inter text-white w-auto md:w-full">
+        <div className="font-inter text-white w-auto md:w-full xl:w-80">
           <div className="flex mt-10 gap-4">
             <Link to="/">
               <img src={logoImage} alt="Logo Icose" className="h-20 xl:h-16" />
               <img src={logoName} alt="nome Icose" />
             </Link>
           </div>
-          <h1 className="font-Montserrat text-white mt-2 w-auto xl:w-80 text-xl xl:text-base">
+          <h1 className="font-Montserrat text-white mt-2 xl:w-80 text-xl xl:text-base">
             INSTITUTO COMUNITÁRIO DE SERGIPE
           </h1>
           <h3 className="mt-4 w-auto md:w-full xl:w-80 text-lg xl:text-base">
