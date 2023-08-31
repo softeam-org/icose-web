@@ -20,8 +20,8 @@ function Community() {
           <h4 className="font-bold justify-self-center">Gostaria de entender um pouco sobre as características de um Instituto Comunitário?</h4>
         </div>
           <div className="flex justify-center flex-row gap-12 max-lg:flex-col">
-            <button className="text-white font-bold px-40 max-sm:px-28 py-4 bg-dark-green/100 rounded-3xl self-center hover:bg-standard-blue hover:scale-105 ease-in duration-300">Saiba mais</button>
-            <button className="text-white font-bold  px-10 py-4 bg-dark-green rounded-3xl self-center hover:bg-standard-blue hover:scale-105 ease-in duration-300">Institutos Comunitários no Brasil</button>
+            <button className="text-white font-bold px-20 sm:px-40 py-4 bg-dark-green/100 rounded-3xl self-center hover:bg-standard-blue hover:scale-105 ease-in duration-150">Saiba mais</button>
+            <button className="text-white font-bold px-10 py-4 bg-dark-green rounded-3xl self-center hover:bg-standard-blue hover:scale-105 ease-in duration-150">Institutos Comunitários no Brasil</button>
           </div>
       </div>
 
@@ -34,9 +34,12 @@ function Community() {
               <img src={mail} alt="Imagem de uma carta genérica"/>
               <a className="font-bold" href="mailto:email@email.com.br?subject=Fortalecimento Comunitário&body=Diga-nos o que precisa">email@email.com.br</a>
             </div>
-            <div className="flex flex-row justify-center gap-2 z-0"> 
-              <img src={phone} alt="Imagem de um telefone"/>
-              <p className="font-bold">(79) 3223-2159 <span className="max-sm:hidden">(Para recados)</span></p>
+            <div className="flex justify-center flex-row gap-2 max-sm:flex-col"> 
+              <div className="flex flex-row justify-center gap-2">
+                <img src={phone} alt="Imagem de um telefone"/>
+                <span className="font-bold">(79) 3223-2159</span>
+              </div>
+              <span className="font-bold flex justify-center">(Para recados)</span>
             </div>
           </div>
       </div>
