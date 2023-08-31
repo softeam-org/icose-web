@@ -13,7 +13,12 @@ function NavBar() {
         key={page.name}
         name={page.name}
         route={page.route}
-        onClick={() => setIsNavOpen(false)}
+        onClick={
+          () => {
+          setIsNavOpen(false);
+          window.scrollTo({top:0, left:0, behavior:'smooth'});
+          }
+        }
       />
     );
   });
