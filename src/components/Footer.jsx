@@ -34,25 +34,40 @@ function Footer() {
           </h2>
         </div>
         <div className="font-inter text-white mt-7 md:mt-14 xl:mt-14 md:w-42 xl:w-52">
-          <h2>
+          <h2 className="font-bold">
             DESTAQUES
           </h2>
-          <div className="mt-7 xl:mt-10">
+          <div className="mt-7 xl:mt-10 ">
             <ul>
               <li className="flex items-center gap-2">
-                <ArrowRight size={32} /> <Link to="/sobre">Sobre</Link>
+                <ArrowRight size={32} /> <Link to="/sobre">
+                  <p className="relative text-dec cursor-pointer after:content-[''] after:absolute after:bottom-[0.1rem] after:left-0 after:border-b after:border-standard-blue xl:after:border-white after:border-solid after:w-0 after:transition-[width] after:pointer-events-none after:hover:w-full">
+                    Sobre
+                  </p>
+                </Link>
               </li>
               <li className="mt-6 flex items-center gap-2">
-                <ArrowRight size={32} />  <Link to="/projetos">Projetos</Link>
+                <ArrowRight size={32} />  <Link to="/projetos">
+                  <p className="relative text-dec cursor-pointer after:content-[''] after:absolute after:bottom-[0.1rem] after:left-0 after:border-b after:border-standard-blue xl:after:border-white after:border-solid after:w-0 after:transition-[width] after:pointer-events-none after:hover:w-full">
+                    Projetos
+                  </p>
+                </Link>
               </li>
               <li className="mt-6 flex items-center gap-2">
-                <ArrowRight size={32} />  <Link to="/comunitario">Comunitário</Link>
+                <ArrowRight size={32} />
+                <Link to="/comunitario">
+                  <p className="relative text-dec cursor-pointer after:content-[''] after:absolute after:bottom-[0.1rem] after:left-0 after:border-b after:border-standard-blue xl:after:border-white after:border-solid after:w-0 after:transition-[width] after:pointer-events-none after:hover:w-full">
+                    Comunitário
+                  </p>
+                </Link>
               </li>
             </ul>
           </div>
         </div>
         <div className="font-inter text-white mt-7 md:mt-14 xl:mt-14 md:w-64 w-72">
-          <h2>TITULO</h2>
+          <h2 className="font-bold">
+            TITULO
+          </h2>
           <h3 className="Titulo mt-7 xl:mt-10">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Beatae nisi at animi facilis ipsum officia,
@@ -63,25 +78,27 @@ function Footer() {
           </h3>
         </div>
         <div className="font-inter text-white mt-7 md:mt-14 xl:mt-14 md:w-64 w-72">
-          <h2>DOE AQUI</h2>
+          <h2 className="font-bold">
+            DOE AQUI
+          </h2>
           <h3 className="Donation mmt-7 xl:mt-10">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Beatae nisi at animi facilis ipsum officia,
             sed.
           </h3>
-          <button className="rounded-lg bg-amber-500 h-14 w-48 shadow-xl mt-7 text-2xl font-bold">
+          <button className="rounded-lg bg-amber-500 hover:bg-amber-600 h-14 w-48 shadow-xl mt-7 text-2xl font-bold transition duration-300 ease-in-out">
             <Link to="/doacao">Doe Aqui</Link>
           </button>
         </div>
       </div>
       <div className="bg-stone-900">
-        <div className="flex font-inter mx-auto md:mx-10 xl:mx-32 text-white text-sm place-content-center h-20 items-center justify-between">
-          <h3 className='text-xs xl:text-base mx-2'>
+        <div className="flex font-inter mx-auto mx-5 md:mx-20 xl:mx-32 text-white text-sm place-content-center h-32 md:h-20 items-center justify-between">
+          <h3 className='text-xs xl:text-base mx-2 w-auto'>
             Copyright © 2023 ICOSE - Instituto Comunitário de Sergipe. CNPJ: 12.345.678/0001-00
           </h3>
-          <h3 className="flex items-center text-xs xl:text-base mx-2">
+          <h3 className="flex flex-col md:flex-row items-center text-center w-auto text-xs xl:text-base mx-2">
             Desenvolvido por Softeam
-            <img src={logoSofteam} alt="Logo Softeam" className="w-1/4 md:w-auto xl:w-auto" />
+            <img src={logoSofteam} alt="Logo Softeam" className="w-min-[20rem] w-auto" />
           </h3>
         </div>
       </div>
