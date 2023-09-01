@@ -1,11 +1,15 @@
 import { List, X } from "@phosphor-icons/react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { pages } from "data/pages"
 import Overlay from "@/components/Overlay";
 import PageLink from "./PageLink";
 
 function NavBar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
+
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, []);
 
   const links = pages.map(page => {
     return (
@@ -15,8 +19,14 @@ function NavBar() {
         route={page.route}
         onClick={
           () => {
-          setIsNavOpen(false);
-          window.scrollTo({top:0, left:0, behavior:'smooth'});
+            setIsNavOpen(false);
+            let agent = navigator.userAgent;
+            if(agent.match(/firefox|fxios/i)) {
+              window.scrollTo(0,0);
+            }
+            else {
+              window.scrollTo({top:0, left:0, behavior:"smooth"});
+            }
           }
         }
       />
