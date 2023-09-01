@@ -1,8 +1,8 @@
 import UnderConstruction from "@/components/UnderConstruction";
-function Transfers() {
+function Community() {
   return (
     <UnderConstruction />
   );
 }
 
-export default Transfers;
+export default Community;
