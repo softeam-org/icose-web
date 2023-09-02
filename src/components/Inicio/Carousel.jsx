@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { CaretCircleLeft, CaretCircleRight } from "@phosphor-icons/react";
+
 //imports swiper
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -33,14 +35,14 @@ function Carousel() {
         pagination={{
           dynamicBullets: true,
         }}
-        navigation ={true}
-        //configurando setas manualmente
+        navigation
+         
         breakpoints={{
           640: {
             slidesPerView: 2,
             spaceBetween: 20,
           },
-          768: {
+          960: {
             slidesPerView: 3,
             spaceBetween: 40,
           }
@@ -49,9 +51,10 @@ function Carousel() {
         className="mySwiper"
       >   
       {data.map((slide) => (
-        <SwiperSlide key={slide.id} className='w-80 pb-16'>
+        <SwiperSlide key={slide.id} className='w-10 pb-16 ' >
+          <div className='custom-slide'>
             <img src={slide.image} className=" w-full" />
-              <div className="w-full flex flex-col space-y-1.5 md:space-y-2 py-3 ">
+            <div className="w-full flex flex-col space-y-1.5 md:space-y-2 py-3 ">
                 <h2 className="font-inter font-semibold text-standard-blue text-xs sm:text-base md:text-2xl xl:text-2xl text-left">
                   {slide.title}
                 </h2>
@@ -60,6 +63,8 @@ function Carousel() {
                   {slide.content}
                 </p>
             </div> 
+          </div>
+          
           </SwiperSlide>  
       ))}
       </Swiper>
