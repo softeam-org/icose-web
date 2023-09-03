@@ -8,7 +8,7 @@ import VolunteerCards from "../components/About/VolunteerCards";
 function About() {
   return (
     <div className="flex-1 flex flex-col bg-background-section justify-center items-center text-5xl w-full">
-      <div className="flex flex-col w-9/12 space-y-20 pt-24 pb-20">
+      <section className="flex flex-col w-9/12 space-y-20 pt-24 pb-20">
         <Title
           color = "standed-blue."
           content={"Governança:"}
@@ -35,8 +35,8 @@ function About() {
             text = {"Marco Vieira é jornalista e multiartista que trafega pelas áreas da fotografia, audiovisual e literatura. É amante das artes e das relações humanas. Compreende a vida como um todo que se harmoniza a partir dos bons pensamentos, das boas palavras e das boas ações."}
           />
         </div>                   
-      </div>
-      <div className="flex flex-col w-9/12">
+      </section>
+      <section className="flex flex-col w-9/12">
         <Title
           color = "#F59E0B"
           content={"Associados"}
@@ -64,22 +64,22 @@ function About() {
             text={"Mônica Jesus dos Santos, mãe, filha e irmã Empresaria Contábil, contadora, especialista em Auditoria e Holding, membro da comissão de estudo contábil aplicado ao terceiro setor do CRC/SE, ama a vida e tudo que ela ensina."}
           />
         </div>
-        <div className="mb-28">
-          <div className="mb-8">
-            <Title
-              color = "#365314"
-              content={"Voluntários"}
-              centeredTitle ={"true"}
-            /> 
-          </div>
-          <div>
-            <VolunteerCards
-              img = {<User size={55} alt="Voluntary"/>}
-              text={"Hugo"}
-            />
-          </div>
-        </div>               
-      </div>        
+      </section>
+      <section className="mb-28">
+        <div className="mb-8">
+          <Title
+            color = "#365314"
+            content={"Voluntários"}
+            centeredTitle ={"true"}
+          /> 
+        </div>
+        <div>
+          <VolunteerCards
+            img = {<User size={55} alt="Voluntary"/>}
+            text={"Hugo"}
+          />
+        </div>
+      </section>                       
     </div>
   );
 };
