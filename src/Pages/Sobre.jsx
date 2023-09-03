@@ -65,7 +65,7 @@ function About() {
           />
         </div>
       </section>
-      <section className="mb-28">
+      <section className="mb-28 w-9/12">
         <div className="mb-8">
           <Title
             color = "#365314"
