@@ -96,7 +96,7 @@ function Footer() {
           <h3 className='text-xs xl:text-base mx-2 w-auto'>
             Copyright © 2023 ICOSE - Instituto Comunitário de Sergipe. CNPJ: 12.345.678/0001-00
           </h3>
-          <h3 className="flex flex-col md:flex-row items-center text-center w-auto text-xs xl:text-base mx-2">
+          <h3 className="flex flex-col-reverse md:flex-row items-center text-center w-auto text-xs xl:text-base mx-2">
             Desenvolvido por Softeam
             <img src={logoSofteam} alt="Logo Softeam" className="w-min-[20rem] w-auto" />
           </h3>
