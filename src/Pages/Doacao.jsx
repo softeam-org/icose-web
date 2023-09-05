@@ -1,5 +1,5 @@
 import womenWorkin from "@/assets/women-working.svg"
-import PixBg from "../components/Donation/PixBg";
+import PixBg from "@/components/Donation/PixBg";
 
 function Donation() {
   return (
@@ -11,7 +11,7 @@ function Donation() {
           alt="Mulher trabalhando em serviço comunitário"
         />
         <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
-          <p className="text-white text-2xl md:text-4xl lg:text-4xl xl:text-6xl	font-bold px-6 w-3/4 h-4/6 py-10 tracking-wide leading-tight">
+          <p className="text-white text-2xl md:text-4xl lg:text-4xl xl:text-6xl	font-bold px-12 mx-auto max-w-7xl h-4/6 py-10 tracking-wide leading-tight">
             Todo valor arrecadado no território em 2023 será integralmente repassado para iniciativas selecionadas através do mapeamento e/ou edital.
           </p>
         </div>
