@@ -92,12 +92,12 @@ function Footer() {
         </div>
       </div>
       <div className="bg-stone-900">
-        <div className="flex font-inter mx-auto mx-5 md:mx-20 xl:mx-32 text-white text-sm place-content-center h-32 md:h-20 items-center justify-between">
-          <h3 className='text-xs xl:text-base mx-2 w-auto'>
+        <div className="flex flex-col justify-arround gap-5 md:flex-row font-inter mx-auto mx-5 md:mx-20 xl:mx-32 text-white text-sm place-content-center h-32 md:h-20 items-center md:justify-between">
+          <h3 className='text-xs xl:text-base mx-2 text-center w-auto'>
             Copyright © 2023 ICOSE - Instituto Comunitário de Sergipe. CNPJ: 12.345.678/0001-00
           </h3>
-          <h3 className="flex flex-col-reverse md:flex-row items-center text-center w-auto text-xs xl:text-base mx-2">
-            Desenvolvido por Softeam
+          <h3 className="flex flex-row items-center text-center w-auto text-xs xl:text-base mx-2">
+          Desenvolvido por Softeam
             <img src={logoSofteam} alt="Logo Softeam" className="w-min-[20rem] w-auto" />
           </h3>
         </div>
