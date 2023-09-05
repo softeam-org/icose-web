@@ -7,7 +7,7 @@ import BackgroundWhite from "./BackgroundWhite"
 
 function PixBg() {
   return (
-    <div className="flex flex-col w-5/6">
+    <div className="flex flex-col px-12 min-w-full">
       <div className="flex flex-col gap-10 justify-center mx-[12%]">
         <h1>
           <Title color="#1E3A8A" content="Faça sua doação" />
@@ -46,7 +46,7 @@ function PixBg() {
               CHAVE PIX
             </h1>
             <BackgroundWhite>
-              <p>
+              <p className="w-full break-normal">
                 50.310.780/0001-44
               </p>
             </BackgroundWhite>
@@ -62,7 +62,7 @@ function PixBg() {
                 C/C: 23.968-2
               </p>
             </BackgroundWhite>
-            <div className="mt-10 space-y-4 w-3/4">
+            <div className="mt-10 space-y-4 px-12 mx-auto max-w-full">
               <h1 className="font-bold text-lg xl:text-xl">
                 Instruções para realizar transferência PIX:
               </h1>
