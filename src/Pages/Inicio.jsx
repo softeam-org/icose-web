@@ -11,7 +11,7 @@ function Home() {
       
       <Banner />
       
-      <section className="bg-background-section">
+      <section className="bg-background-section pt-[10vh]">
         <h2 className="flex w-full pt-20 font-semibold text-xl justify-center">
           Conheça a Icose
         </h2>
