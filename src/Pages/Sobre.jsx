@@ -1,8 +1,8 @@
 import Title from "@/components/Title";
 import CollaboratorCard from "@/components/About/CollaboratorCard";
 import { User} from "@phosphor-icons/react";
-import AssociaCard from "../components/About/AssociaCard";
-import VolunteerCards from "../components/About/VolunteerCards";
+import AssociaCard from "@/components/About/AssociaCard";
+import VolunteerCards from "@/components/About/VolunteerCards";
 
 
 function About() {
@@ -87,5 +87,3 @@ function About() {
 };
 
 export default About;
-
-

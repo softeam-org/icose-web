@@ -1,19 +1,17 @@
+import { lazy } from "react";
 import { projects } from "data/projects";
 import Project from "./Project";
 
-function ProjectRender() {
+const projectsList = projects.map(project => {
+  const title = project.title;
+  const Content = lazy(() => import(`./Contents/${project.filename}.jsx`));
+  return <Project key={project.filename} title={title} content={<Content />} />;
+});
 
-  return(
-    <div className="project-render flex flex-col gap-8">
-      {projects.map(project => {
-        const ProjectTitle = project.title;
-        const ProjectFileName = project.filename;
-        return (
-          <div className='project-content' key={project.filename}>
-            <Project title={ProjectTitle} file={ProjectFileName}  />
-          </div>
-        )
-      })}
+function ProjectRender() {
+  return (
+    <div className="flex flex-col gap-12">
+      {projectsList}
     </div>
   );
 }
