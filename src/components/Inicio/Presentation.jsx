@@ -1,5 +1,5 @@
 import PlusButton from "@/components/Inicio/PlusButton";
-import Title from "@/components/Title"
+import Title from "@/components/Title";
 
 function Presentation() {
   return (
