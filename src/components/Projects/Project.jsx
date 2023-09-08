@@ -7,7 +7,7 @@ function Project({ title: projectTitle , file: projectFileName }) {
 
   return (
    <Suspense fallback={<Loading />}>
-      <h2 className="font-bold">{projectTitle}</h2>
+      <h2 className="font-bold mb-6">{projectTitle}</h2>
       <ProjectContent />
     </Suspense>
   )
