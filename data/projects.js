@@ -4,7 +4,7 @@ export const projects = [
     filename: 'OxenteMulher'
   },
   {
-    title: 'Projeto Conhecendo o Territórios', 
+    title: 'Projeto Conhecendo o Território', 
     filename:'ConhecendoTerritorio'
   },
   {
