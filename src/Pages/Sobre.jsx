@@ -12,7 +12,7 @@ function About() {
         <section className="flex flex-col space-y-20 pt-24 pb-20">
           <Title
             color = "standed-blue."
-            content={"Governança:"}
+            content={"Membros do Conselho de Administração:"}
           />
           <div className="space-y-4">
             <CollaboratorCard
