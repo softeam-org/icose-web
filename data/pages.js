@@ -15,9 +15,9 @@ export const pages = [
     filename: "Projetos",
   },
   {
-    name: "Transferências",
-    route: "/transferencias",
-    filename: "Transferencias",
+    name: "Comunitário",
+    route: "/comunitario",
+    filename: "Comunitario",
   },
   {
     name: "Doe Aqui",
