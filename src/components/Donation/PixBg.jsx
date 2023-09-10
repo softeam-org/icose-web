@@ -7,8 +7,8 @@ import BackgroundWhite from "./BackgroundWhite"
 
 function PixBg() {
   return (
-    <div className="flex flex-col px-12 min-w-full">
-      <div className="flex flex-col gap-10 justify-center mx-[12%]">
+    <div className="flex flex-col px-12 w-full max-w-6xl mx-auto-xl">
+      <div className="flex flex-col gap-10 justify-center">
         <h1>
           <Title color="#1E3A8A" content="Faça sua doação" />
         </h1>
@@ -16,7 +16,7 @@ function PixBg() {
           Todo valor arrecadado será repassado para projetos sociais.
         </h2>
       </div>
-      <div className="flex flex-col gap-14 justify-center items-center mx-[12%] mt-10 mb-20">
+      <div className="flex flex-col gap-14 justify-center items-center mt-10 mb-20">
         <div className="rounded-3xl grid gap-8 xl:gap-16 w-full bg-[#37B4AA] text-white items-center">
           <div className="flex flex-col items-center justify-center py-12 gap-3">
             <h1 className="mt-10 text-lg xl:text-xl font-bold">
@@ -62,15 +62,14 @@ function PixBg() {
                 C/C: 23.968-2
               </p>
             </BackgroundWhite>
-            <div className="mt-10 space-y-4 px-12 mx-auto max-w-full">
-              <h1 className="font-bold text-lg xl:text-xl">
+            <div className="mt-10 px-12 space-y-4 max-w-4xl">
+              <h1 className="font-extrabold	text-lg lg:text-2xl">
                 Instruções para realizar transferência PIX:
               </h1>
-              <p>
+              <p className="text-lg lg:text-xl">
                 Com chave pix:
                 <br />
                 - Se preferir fazer a doação sem escanear,
-                <br />
                 copie a chave acima e cole na área PIX do seu banco.
                 <br />
                 <br />
