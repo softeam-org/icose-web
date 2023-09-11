@@ -83,14 +83,16 @@ function About() {
             />
           </div>
         </section>
-        <section>
-          <h1 className="pb-6">
-            <Title
-              color="standard-blue"
-              content="Transparencia"
-            />
-          </h1>
-          <p>É um dos valores do Icose e os demonstrativos financeiros e de atividades serão postadas anualmente.</p>
+        <section className="flex flex-col gap-12 pb-20">
+          <div className="flex flex-col gap-6">
+            <h1>
+              <Title
+                color="dark-green"
+                content="Transparencia"
+              />
+            </h1>
+            <p>É um dos valores do Icose e os demonstrativos financeiros e de atividades serão postadas anualmente.</p>
+          </div>
           <TransparencyRender />
         </section>                       
       </div>

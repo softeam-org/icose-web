@@ -3,14 +3,14 @@ import Title from "@/components/Title";
 function Transparency({ title, content }) {
 
   return (
-    <div className="flex flex-col gap-2">
-      <h1>
+    <div className="flex flex-col gap-12">
+      <h2>
         <Title
-          color="standard-blue"
+          color="dark-green"
           content={title}
         />
-      </h1>
-      {/* <h1 className="text-lg font-bold"></h1> */}
+      </h2>
+      {/* FAZER COMPONENTE PARA ANEXOS - Pegar Title como referencia */}
       {content}
     </div>
   )
