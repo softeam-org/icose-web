@@ -3,6 +3,8 @@ import CollaboratorCard from "@/components/About/CollaboratorCard";
 import { User} from "@phosphor-icons/react";
 import AssociaCard from "@/components/About/AssociaCard";
 import VolunteerCards from "@/components/About/VolunteerCards";
+import TransparencyRender from "@/components/About/Transparency/TransparencyRender";
+
 
 
 function About() {
@@ -80,6 +82,16 @@ function About() {
               text={"Hugo"}
             />
           </div>
+        </section>
+        <section>
+          <h1 className="pb-6">
+            <Title
+              color="standard-blue"
+              content="Transparencia"
+            />
+          </h1>
+          <p>É um dos valores do Icose e os demonstrativos financeiros e de atividades serão postadas anualmente.</p>
+          <TransparencyRender />
         </section>                       
       </div>
     </div>
