@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { CaretCircleLeft, CaretCircleRight } from "@phosphor-icons/react";
 
 //imports swiper
+import {Pagination, Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
+//imports swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import {Pagination, Navigation } from 'swiper/modules';
+import './Carousel.css';
+
 
 function Carousel() {
   const [data, setData] = useState([]);
@@ -32,18 +34,22 @@ function Carousel() {
       <Swiper
         spaceBetween={50}
         slidesPerView={1}
+        navigation
         pagination={{
           dynamicBullets: true,
-        }}
-        navigation
-         
+          clickable: true
+        }}         
         breakpoints={{
           640: {
             slidesPerView: 2,
-            spaceBetween: 20,
+            spaceBetween: 40,
           },
           960: {
             slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1500:{
+            slidesPerView: 4,
             spaceBetween: 40,
           }
         }}
@@ -64,7 +70,6 @@ function Carousel() {
                 </p>
             </div> 
           </div>
-          
           </SwiperSlide>  
       ))}
       </Swiper>

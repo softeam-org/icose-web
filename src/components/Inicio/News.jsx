@@ -1,4 +1,4 @@
-import Carousel from "./Carousel";
+import Carousel from "./Carousel/Carousel";
 function News (){
   return(
     <div className="flex flex-col items-center w-full py-10">
