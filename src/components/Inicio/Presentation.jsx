@@ -47,8 +47,8 @@ function Presentation() {
           </p>
           <ArrowList items={items} />
         </div>
-        <div className="flex justify-center my-[10%]">
-          <img src={InformativoIcose} alt="Imagem informativa da icose " className="w-3/5 h-auto" />
+        <div className="flex justify-center my-20">
+          <img src={InformativoIcose} alt="Imagem informativa da icose " className="w-full md:w-2/5" />
         </div>
       </div>
     </div>
