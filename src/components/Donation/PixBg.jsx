@@ -7,7 +7,7 @@ import BackgroundWhite from "./BackgroundWhite"
 
 function PixBg() {
   return (
-    <div className="flex flex-col px-12 w-full max-w-6xl mx-auto-xl">
+    <div className="flex flex-col px-12 w-full max-w-6xl mx-auto">
       <div className="flex flex-col gap-10 justify-center">
         <h1>
           <Title color="#1E3A8A" content="Faça sua doação" />
