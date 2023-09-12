@@ -1,14 +1,45 @@
+{/* 
+  Add files in data/transparency 
+  Exemple: 
+    File: "data/transparency/anexo1-2023.pdf"
+    filename variable: "anexo1-2023.pdf"
+*/}
 export const transparency = [  
   {
-    title: '2023', 
-    filename:'ConhecendoTerritorio'
+    title: '2022 (teste)',
+    attachments: [
+      {
+        filename: 'Lorem ipsum dolor 1.pdf',        
+      },
+      {
+        filename: 'Lorem ipsum dolor 2.pdf',
+      },
+      {
+        filename: 'Lorem ipsum dolor 2.pdf',
+      },
+      {
+        filename: 'Lorem ipsum dolor 2.pdf',
+      },
+      {
+        filename: 'anexo1-2023.pdf',
+      },
+      {
+        filename: 'Lorem ipsum dolor 2.pdf',
+      },
+      {
+        filename: 'anexo1-2023.pdf',
+      },
+      {
+        filename: 'Lorem ipsum dolor 2.pdf',
+      },
+    ],
   },
   {
-    title: 'Projeto Maratona da Solidariedade', 
-    filename: 'MaratonaSolidariedade'
-  },
-  {
-    title: 'Projeto Recanto dos Pássaros',
-    filename: 'RecantoPassaros'
+    title: '2021 (teste)',
+    attachments: [
+      {
+        filename: 'anexo1-2023.pdf',
+      },
+    ],
   }
 ];
