@@ -46,7 +46,7 @@ function PixBg() {
               CHAVE PIX
             </h1>
             <BackgroundWhite>
-              <p className="w-full break-normal">
+              <p className="w-36 text-center md:w-full break-normal">
                 50.310.780/0001-44
               </p>
             </BackgroundWhite>
@@ -54,7 +54,7 @@ function PixBg() {
               CONTA
             </h1>
             <BackgroundWhite>
-              <p>
+              <p className="w-36 text-center md:w-full break-normal">
                 Banco do Brasil
                 <br />
                 Agência: 5985-4
