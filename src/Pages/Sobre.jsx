@@ -1,8 +1,10 @@
 import Title from "@/components/Title";
 import CollaboratorCard from "@/components/About/CollaboratorCard";
-import { User} from "@phosphor-icons/react";
+import { User } from "@phosphor-icons/react";
 import AssociaCard from "@/components/About/AssociaCard";
 import VolunteerCards from "@/components/About/VolunteerCards";
+import TransparencyRender from "@/components/About/Transparency/TransparencyRender";
+
 
 
 function About() {
@@ -56,11 +58,11 @@ function About() {
               img = {<User size={55} alt="Associate"/>}
               text={"Andréa Paula Cajazeira, economista, funcionária pública, mãe, esposa e em busca constante de crescimento em valores, virtudes e sabedoria."}
             />
-              <AssociaCard
+            <AssociaCard
               img = {<User size={55} alt="Associate"/>}
               text={"Jeannine Almeida de Sousa Administradora, amante do tema finanças, gosta de ajudar as pessoas, procura uma vida um pouco mais justa e sustentável para o mundo, ama família."}
             />
-              <AssociaCard
+            <AssociaCard
               img = {<User size={55} alt="Associate"/>}
               text={"Mônica Jesus dos Santos, mãe, filha e irmã Empresaria Contábil, contadora, especialista em Auditoria e Holding, membro da comissão de estudo contábil aplicado ao terceiro setor do CRC/SE, ama a vida e tudo que ela ensina."}
             />
@@ -80,10 +82,31 @@ function About() {
               text={"Hugo"}
             />
           </div>
+        </section>
+        <section className="flex flex-col gap-12 pb-20">
+          <div className="flex flex-col gap-6">
+            <h1>
+              <Title
+                color="dark-green"
+                content="Transparencia"
+              />
+            </h1>
+            <p>É um dos valores do Icose e os demonstrativos financeiros e de atividades serão postadas anualmente.</p>
+          </div>
+          <div className="flex flex-col gap-6"> {/* Remove after update the 2023 files on date/transparency.js */}
+            <h1>
+              <Title
+                color="dark-green"
+                content="2023"
+              />
+            </h1>
+            <p className=" text-center">Demonstrativos Financeiros 2023 (em construção)</p>
+          </div>
+          <TransparencyRender /> {/* To change files, go to data/transparency.js */}
         </section>                       
       </div>
     </div>
   );
-};
+}
 
 export default About;
