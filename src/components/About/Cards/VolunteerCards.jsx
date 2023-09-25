@@ -1,4 +1,4 @@
-function VolunteerCards ({img, text}){
+function VolunteerCards ({name, text}){
   return(
     <div className="pl-14 pr-14 lg:pr-28 py-20 bg-[#FBFBFB] shadow-md flex justify-center">
       <div className="flex flex-wrap w-full lg:flex-nowrap justify-center items-center lg:space-x-12 ">
