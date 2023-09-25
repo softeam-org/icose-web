@@ -1,6 +1,5 @@
 import Title from "@/components/Title";
 
-
 function Transparency() {
   return(
     <div className="flex flex-col space-y-10">
@@ -14,9 +13,6 @@ function Transparency() {
         <p className="text-xl">Demonstrativos financeiros e de atividades serão postados aqui.</p>
       </div>
   </div>
-  
   );
-  
 }
-
 export default Transparency;
