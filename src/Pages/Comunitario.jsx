@@ -1,6 +1,6 @@
 import NationalCommunity from "@/components/Comunitario/NationalCommunity";
 import Title from "@/components/Title";
-import SliderC from "@/components/Comunitario/sliderCommunity";
+import SliderC from "@/components/Comunitario/SliderCommunity";
 import TransformandoTerritorios from "@/assets/TransformandoTerritorios.png";
 import {Columns, Coins, MapPinLine, Hand, HandsPraying, Handshake, Hexagon, UsersFour } from "@phosphor-icons/react";
 
