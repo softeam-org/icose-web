@@ -1,5 +1,5 @@
 
-import NacionalCommunity from "@/components/Comunitario/NacionalCommunity";
+import NationalCommunity from "@/components/Comunitario/NationalCommunity";
 
 function Community() {
   return (
@@ -8,7 +8,7 @@ function Community() {
 
     <section>
       <div className="flex flex-col gap-10 xl:gap-20 pb-10 pt-10 xl:pt-20 mx-auto max-w-[100rem] px-12">
-        < NacionalCommunity />
+        < NationalCommunity />
       </div>
     </section>    
 
