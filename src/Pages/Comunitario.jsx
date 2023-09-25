@@ -1,5 +1,5 @@
 
-import NationalCommunity from "@/components/Comunitario/NationalCommunity";
+import NationalCommunity from "@/components/Comunitario/NacionalCommunity";
 
 function Community() {
   return (
