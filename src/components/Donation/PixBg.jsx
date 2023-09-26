@@ -1,4 +1,4 @@
-import qrCode from "@/assets//qr-code.svg"
+import qrCode from "@/assets//qr-code.png"
 import Title from "@/components/Title"
 import logoImage from "@/assets/LOGO-ICOSE.svg"
 import logoPix from "@/assets/logo-pix.svg"
@@ -43,7 +43,7 @@ function PixBg() {
               alt="Qr-code para doações da icose"
             />
             <h1 className="text-lg xl:text-xl font-bold">
-              CHAVE PIX
+              CHAVE PIX (CNPJ)
             </h1>
             <BackgroundWhite>
               <p className="w-36 text-center md:w-full break-normal">
@@ -75,11 +75,11 @@ function PixBg() {
                 <br />
                 Com QR CODE:
                 <br />
-                1 - Abra o app do seu banco
+                1 - Abra o app do seu banco.
                 <br />
-                2 - Encontre a área PIX dentro do app do seu banco
+                2 - Encontre a área PIX dentro do app do seu banco.
                 <br />
-                3 - Selecione pagar QR CODE ou algo do tipo e escaneie a imagem acima.
+                3 - Escolha 'Pagar com QR Code' e faça a leitura da imagem acima.
                 <br />
                 4 - Digite o valor que quer doar e confirme a operação conforme instruções na tela.
               </p>
