@@ -1,25 +1,32 @@
-import Card from "@/components/Inicio/Card"
-import { Target } from "@phosphor-icons/react";
-import { Heart } from "@phosphor-icons/react";
+import Title from "@/components/Title"
+import Banner from "@/components/Inicio/Banner"
+import Cards from "@/components/Inicio/Cards"
+import Presentation from "@/components/Inicio/Presentation"
+import ContactUs from "@/components/Inicio/ContactUs"
+import Community from "@/components/Inicio/Community";
 
 function Home() {
   return (
-    <div className="flex-1 bg-background-section">
-      <div className="w-full h-0 pt-[50%] bg-map bg-no-repeat bg-cover bg-center xl:p-0 xl:h-[50rem]"></div>
-      <div className="mx-auto max-w-[110rem] px-12">
-        <div className="flex gap-10 xl:gap-16 my-12 xl:my-28 flex-col min-[800px]:flex-row">
-          <Card 
-            icon={<Target size={32} />}
-            title={"NOSSA MISSÃO"}
-            text={"Promover o fortalecimento do protagonismo das comunidades locais e a atuação em rede, visando o desenvolvimento justo, solidário e sustentável de Sergipe."}
-          />
-          <Card 
-            icon={<Heart size={32} weight="fill" />}
-            title={"NOSSOS VALORES"}
-            text={"Ética, solidariedade, inovação, transparência e comprometimento"}
-          />
+    <div className="flex-1 text-2xl">
+      <Banner />
+
+      <section className="pt-20 bg-background-section">
+        <Title
+          centeredTitle={true}
+          content="Conheça o ICOSE"
+        />
+
+        <div className="flex flex-col gap-10 xl:gap-20 pb-10 pt-10 xl:pt-20 mx-auto max-w-[100rem] px-12">
+          <Cards />
+          <Presentation />
         </div>
-      </div>
+      </section>
+
+      <section>
+        <div className="flex flex-col gap-16 pt-10 pb-10 xl:pb-20 mx-auto max-w-[100rem] px-12">
+          <Community />
+        </div>
+      </section>
     </div>
   );
 }
