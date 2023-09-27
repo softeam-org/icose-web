@@ -18,11 +18,6 @@ export default {
       }
     },
   },
-  plugins: [daisyUI],
-
-  daisyui:{
-    themes: false,
-    darkTheme: "none",
-  }
+  plugins: [],
 }
 
