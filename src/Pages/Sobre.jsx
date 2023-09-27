@@ -1,6 +1,6 @@
 import Title from "@/components/Title";
-import MemberCard from "@/components/About/Cards/MemberCard";
-import Transparency from "@/components/About/Transparency/Transparency";
+import MemberCard from "@/components/About/MemberCard";
+import Transparency from "@/components/About/Transparency";
 import { administrators } from "data/administrators";
 import { fiscalCouncil } from "data/fiscalCouncil";
 
