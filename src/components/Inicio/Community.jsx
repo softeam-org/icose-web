@@ -1,8 +1,7 @@
-import mail from "@/assets/mail.svg";
-import phone from "@/assets/phone.svg";
 import idis from "@/assets/LOGO-IDIS.png";
 import tt from "@/assets/LOGO-TT.png";
 import Title from "@/components/Title";
+import ContactUs from "@/components/Inicio/ContactUs";
 
 function Community() {
   return (
@@ -25,24 +24,7 @@ function Community() {
           </div>
       </div>
 
-      <div className="mt-12 flex flex-col gap-8 max-lg:mt-0">
-        <div className="flex justify-center">
-          <h4 className="font-bold justify-self-center">Fale Conosco:</h4>
-        </div>
-          <div className="flex justify-center flex-row gap-20 max-lg:flex-col max-lg:gap-10">
-            <div className="flex flex-row justify-center gap-2"> 
-              <img src={mail} alt="Imagem de uma carta genérica"/>
-              <a className="font-bold" href="mailto:email@email.com.br?subject=Fortalecimento Comunitário&body=Diga-nos o que precisa">email@email.com.br</a>
-            </div>
-            <div className="flex justify-center flex-row gap-2 max-sm:flex-col"> 
-              <div className="flex flex-row justify-center gap-2">
-                <img src={phone} alt="Imagem de um telefone"/>
-                <span className="font-bold">(79) 3223-2159</span>
-              </div>
-              <span className="font-bold flex justify-center">(Para recados)</span>
-            </div>
-          </div>
-      </div>
+      <ContactUs />
 
       <div className="mt-20 flex flex-col gap-16 max-lg:mt-8">
         <Title 

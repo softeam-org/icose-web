@@ -1,3 +1,4 @@
+import Title from "@/components/Title"
 import Banner from "@/components/Inicio/Banner"
 import Cards from "@/components/Inicio/Cards"
 import Presentation from "@/components/Inicio/Presentation"
@@ -9,10 +10,12 @@ function Home() {
     <div className="flex-1 text-2xl">
       <Banner />
 
-      <section className="bg-background-section">
-        <h2 className="flex w-full pt-20 font-semibold text-xl justify-center">
-          Conheça a Icose
-        </h2>
+      <section className="pt-20 bg-background-section">
+        <Title
+          centeredTitle={true}
+          content="Conheça o ICOSE"
+        />
+
         <div className="flex flex-col gap-10 xl:gap-20 pb-10 pt-10 xl:pt-20 mx-auto max-w-[100rem] px-12">
           <Cards />
           <Presentation />
