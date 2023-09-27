@@ -8,14 +8,7 @@ import BackgroundWhite from "./BackgroundWhite"
 function PixBg() {
   return (
     <div className="flex flex-col px-12 w-full max-w-6xl mx-auto">
-      <div className="flex flex-col gap-10 justify-center">
-        <h1>
-          <Title color="#1E3A8A" content="Faça sua doação" />
-        </h1>
-        <h2 className="text-lg xl:text-xl">
-          Todo valor arrecadado será repassado para projetos sociais.
-        </h2>
-      </div>
+      <Title color="#1E3A8A" content="Faça sua doação" />
       <div className="flex flex-col gap-14 justify-center items-center mt-10 mb-20">
         <div className="rounded-3xl grid gap-8 xl:gap-16 w-full bg-[#37B4AA] text-white items-center">
           <div className="flex flex-col items-center justify-center py-12 gap-3">
