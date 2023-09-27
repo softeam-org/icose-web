@@ -4,17 +4,16 @@ import Logo_Icose_2 from "@/assets/Logo_Icose_2.svg"
 function Banner() {
   return (
     <section className="bg-[#2C3E50]">
-      <div className="flex flex-col gap-10 pt-28 sm:px-10 items-center h-auto md:flex-row sm:h-[100vh]">
-        <div className="hidden sm:flex items-center justify-center w-full">
+      <div className="flex gap-10 pt-[92px] px-12 items-center lg:h-[100vh]">
+        <div className="hidden md:flex items-center justify-center flex-1">
           <img
-            className=""
             src={Logo_Icose_2}
             alt="Logo Icose"
           />
         </div>
-        <div className="flex items-center sm:py-6 justify-center sm:h-full w-full ">
+        <div className="flex items-center justify-center py-6 flex-1">
           <img
-            className="w-full max-h-full sm:w-auto sm:relative sm:z-10 sm:rounded-tl-[20%] sm:rounded-br-[15%]" 
+            className="max-h-[80vh] rounded-tl-[20%] rounded-br-[20%]" 
             src={map}
             alt="Mapa de Sergipe" 
           />

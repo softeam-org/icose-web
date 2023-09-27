@@ -8,10 +8,9 @@ import News from "@/components/Inicio/News"
 function Home() {
   return (
     <div className="flex-1 text-2xl">
-      
       <Banner />
-      
-      <section className="bg-background-section md:pt-[10vh]">
+
+      <section className="bg-background-section">
         <h2 className="flex w-full pt-20 font-semibold text-xl justify-center">
           Conheça a Icose
         </h2>
