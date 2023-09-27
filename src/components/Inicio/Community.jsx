@@ -1,6 +1,5 @@
-import idis from "@/assets/LOGO-IDIS.png";
-import tt from "@/assets/LOGO-TT.png";
 import Title from "@/components/Title";
+import Supporters from "@/components/Inicio/Supporters";
 import ContactUs from "@/components/Inicio/ContactUs";
 
 function Community() {
@@ -19,23 +18,14 @@ function Community() {
           <h4 className="font-bold justify-self-center">Gostaria de entender um pouco sobre as características de um Instituto Comunitário?</h4>
         </div>
           <div className="flex justify-center flex-row gap-12 max-lg:flex-col">
-            <button className="text-white font-bold px-20 sm:px-40 py-4 bg-dark-green/100 rounded-3xl self-center hover:bg-standard-blue hover:scale-105 ease-in duration-150">Saiba mais</button>
-            <button className="text-white font-bold px-10 py-4 bg-dark-green rounded-3xl self-center hover:bg-standard-blue hover:scale-105 ease-in duration-150">Institutos Comunitários no Brasil</button>
+            <button className="text-white font-bold px-20 sm:px-40 py-4 bg-dark-green/100 rounded-3xl self-center hover:bg-standard-blue hover:scale-[1.02] ease-in duration-150">Saiba mais</button>
+            <button className="text-white font-bold px-10 py-4 bg-dark-green rounded-3xl self-center hover:bg-standard-blue hover:scale-[1.02] ease-in duration-150">Institutos Comunitários no Brasil</button>
           </div>
       </div>
 
       <ContactUs />
+      <Supporters />
 
-      <div className="mt-20 flex flex-col gap-16 max-lg:mt-8">
-        <Title 
-          color="#F59E0B"
-          content="Apoiadores"
-        />
-        <div className="flex justify-center flex-col gap-20 sm:flex-row max-lg:gap-8">
-          <img className="" src={idis} alt="Logo da apoiadora IDIS"/>
-          <img className="" src={tt} alt="Logo da apoiadora Transformando Territórios"/>
-        </div>
-      </div>
     </div>
   );
 }
