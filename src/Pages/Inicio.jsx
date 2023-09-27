@@ -3,7 +3,6 @@ import Cards from "@/components/Inicio/Cards"
 import Presentation from "@/components/Inicio/Presentation"
 import ContactUs from "@/components/Inicio/ContactUs"
 import Community from "@/components/Inicio/Community";
-import News from "@/components/Inicio/News"
 
 function Home() {
   return (
@@ -24,10 +23,6 @@ function Home() {
         <div className="flex flex-col gap-16 pt-10 pb-10 xl:pb-20 mx-auto max-w-[100rem] px-12">
           <Community />
         </div>
-      </section> 
-
-      <section className="flex justify-center flex-col	bg-background-section items-center py-8">
-        <News />
       </section>
     </div>
   );
