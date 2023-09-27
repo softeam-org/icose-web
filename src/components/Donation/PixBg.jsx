@@ -1,4 +1,4 @@
-import qrCode from "@/assets//qr-code.svg"
+import qrCode from "@/assets//qr-code.png"
 import Title from "@/components/Title"
 import logoImage from "@/assets/LOGO-ICOSE.svg"
 import logoPix from "@/assets/logo-pix.svg"
@@ -8,14 +8,7 @@ import BackgroundWhite from "./BackgroundWhite"
 function PixBg() {
   return (
     <div className="flex flex-col px-12 w-full max-w-6xl mx-auto">
-      <div className="flex flex-col gap-10 justify-center">
-        <h1>
-          <Title color="#1E3A8A" content="Faça sua doação" />
-        </h1>
-        <h2 className="text-lg xl:text-xl">
-          Todo valor arrecadado será repassado para projetos sociais.
-        </h2>
-      </div>
+      <Title color="#1E3A8A" content="Faça sua doação" />
       <div className="flex flex-col gap-14 justify-center items-center mt-10 mb-20">
         <div className="rounded-3xl grid gap-8 xl:gap-16 w-full bg-[#37B4AA] text-white items-center">
           <div className="flex flex-col items-center justify-center py-12 gap-3">
@@ -43,7 +36,7 @@ function PixBg() {
               alt="Qr-code para doações da icose"
             />
             <h1 className="text-lg xl:text-xl font-bold">
-              CHAVE PIX
+              CHAVE PIX (CNPJ)
             </h1>
             <BackgroundWhite>
               <p className="w-36 text-center md:w-full break-normal">
@@ -75,11 +68,11 @@ function PixBg() {
                 <br />
                 Com QR CODE:
                 <br />
-                1 - Abra o app do seu banco
+                1 - Abra o app do seu banco.
                 <br />
-                2 - Encontre a área PIX dentro do app do seu banco
+                2 - Encontre a área PIX dentro do app do seu banco.
                 <br />
-                3 - Selecione pagar QR CODE ou algo do tipo e escaneie a imagem acima.
+                3 - Escolha 'Pagar com QR Code' e faça a leitura da imagem acima.
                 <br />
                 4 - Digite o valor que quer doar e confirme a operação conforme instruções na tela.
               </p>
