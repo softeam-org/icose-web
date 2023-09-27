@@ -6,7 +6,7 @@ const ArrowList = ({ items }) => {
     <div className="flex flex-col gap-8 font-semibold text-base md:text-lg xl:text-xl">
       {items.map((item, index) => (
         <div key={index} className="flex items-start">
-          <CaretRight size={32} className="w-10 h-5" />
+          <CaretRight size={32} className="mt-1 w-10 h-5" />
           <p className='w-full'> {item}</p>
         </div>
       ))}
