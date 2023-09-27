@@ -3,7 +3,6 @@ import Title from "@/components/Title"
 import InformativoIcose from "@/assets/InformativoIcose.svg";
 
 function Presentation() {
-
   const items = [
     'de forma transparente na diversidade de causas e temas;',
     'identificando, reunindo, fortalecendo e assessorando as ONG e/ou iniciativas de pessoas físicas que atuem na nossa comunidade de forma responsável;',
@@ -56,4 +55,3 @@ function Presentation() {
 }
 
 export default Presentation;
-
