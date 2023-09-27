@@ -4,7 +4,7 @@ import Title from "@/components/Title"
 
 function Supporters() {
   return (
-    <div className="mt-20 flex flex-col gap-16 max-lg:mt-8">
+    <div className="flex flex-col gap-8">
       <Title 
         color="#F59E0B"
         content="Apoiadores"
