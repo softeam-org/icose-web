@@ -1,9 +1,11 @@
-function Project({ title, content }) {
+import Title from "@/components/Title";
+
+function Project({ title, children }) {
  
   return (
-    <div className="flex flex-col gap-2">
-      <h1 className="text-lg font-bold">{title}</h1>
-      {content}
+    <div className="flex flex-col text-lg gap-8">
+      <Title content={title}/>
+      {children}
     </div>
   )
 }
