@@ -1,6 +1,7 @@
 import logoImage from "@/assets/LOGO-ICOSE.svg"
 import logoName from "@/assets/LOGO-ICOSE-NAME.svg"
 import logoSofteam from "@/assets/LOGO-SOFTEAM.svg"
+import { icose } from "data/icose";
 import { Link } from "react-router-dom";
 import { Envelope } from "@phosphor-icons/react";
 import { Phone } from "@phosphor-icons/react";
@@ -27,10 +28,12 @@ function Footer() {
             CEP 49037-590
           </h3>
           <h2 className="mt-4 gap-2 flex items-center text-lg xl:text-base">
-            <Phone size={32} />  (79) 3223-2159
+            <Phone size={32} />  
+            <span>{icose.phone}</span>
           </h2>
           <h2 className="flex gap-2 items-center text-lg xl:text-base">
-            <Envelope size={32} /> email@email.com
+            <Envelope size={32} />
+            <a href={`mailto:${icose.email}?body=Diga-nos o que precisa`}>{icose.email}</a>
           </h2>
         </div>
         <div className="font-inter text-white mt-7 md:mt-14 xl:mt-14 md:w-42 xl:w-52">
@@ -94,7 +97,7 @@ function Footer() {
       <div className="bg-stone-900">
         <div className="flex flex-col justify-arround gap-5 md:flex-row font-inter mx-auto mx-5 md:mx-20 xl:mx-32 text-white text-sm place-content-center h-32 md:h-20 items-center md:justify-between">
           <h3 className='text-xs xl:text-base mx-2 text-center w-auto'>
-            Copyright © 2023 ICOSE - Instituto Comunitário de Sergipe. CNPJ: 50.310.780/0001-44
+            Copyright © 2023 ICOSE - Instituto Comunitário de Sergipe. CNPJ: {icose.cnpj}
           </h3>
           <h3 className="flex flex-row items-center text-center w-auto text-xs xl:text-base mx-2">
             Desenvolvido por Softeam
