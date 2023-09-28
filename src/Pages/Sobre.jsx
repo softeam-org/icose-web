@@ -58,7 +58,7 @@ function About() {
       </Body>
     </div>
   );
-}
+};
 
 export default About;
 
