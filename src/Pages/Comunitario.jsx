@@ -1,9 +1,10 @@
-import Participantes from "@/assets/MapaFIC_ProgramaTT.png";
+import { Columns, Coins, MapPinLine, Hand, HandsPraying, Handshake, Hexagon, UsersFour } from "@phosphor-icons/react";
 import Body from "@/components/Body";
 import Title from "@/components/Title";
 import SliderC from "@/components/Comunitario/SliderCommunity";
+
 import TransformandoTerritorios from "@/assets/TransformandoTerritorios.png";
-import { Columns, Coins, MapPinLine, Hand, HandsPraying, Handshake, Hexagon, UsersFour } from "@phosphor-icons/react";
+import Participantes from "@/assets/MapaFIC_ProgramaTT.png";
 
 function Community() {
   return (
@@ -11,7 +12,7 @@ function Community() {
       <Body>
         <section className="flex flex-col gap-12">
           <Title content="Institutos Comunitários" />
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-2">
             <SliderC
               icon={<MapPinLine size={28} />}
               title="Instituições locais"
@@ -53,9 +54,7 @@ function Community() {
               content="Oferecem serviços adaptados aos interesses e a capacidade de contribuição dos doadores, auxiliando-os a alcançarem seus objetivos filantrópicos. São responsáveis também por fomentar a cultura de doação no território e, potencialmente, são instrumentos poderosos para receber legados." />
           </div>
         </section>
-        <div
-          className="pt-12 flex justify-center"
-        >
+        <div className="pt-12 flex justify-center">
           <img
             src={TransformandoTerritorios}
             alt="Descreve o modelo de operação da transformando territórios"
