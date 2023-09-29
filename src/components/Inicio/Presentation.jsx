@@ -22,7 +22,7 @@ function Presentation() {
             content="No Que Acreditamos"
           />
         </h1>
-        <div className="flex flex-col gap-8 text-xl">
+        <div className="flex flex-col gap-8">
           <p className="mt-8">
             Acreditamos que a <strong>REAL TRANSFORMAÇÃO SOCIAL</strong>, requer <strong>VALORES HUMANOS</strong> e <strong>ENGAJAMENTO</strong> da comunidade,
             um processo que se inicia no humano e se expande através das suas <strong>AÇÕES</strong> na comunidade.
@@ -40,7 +40,7 @@ function Presentation() {
             content="Proposta de Atuação"
           />
         </h1>
-        <div className="flex flex-col gap-8 text-xl">
+        <div className="flex flex-col gap-8">
           <p className="mt-8">
             Nossa proposta é atuar EM SERGIPE:
           </p>

@@ -7,7 +7,7 @@ import Community from "@/components/Inicio/Community";
 
 function Home() {
   return (
-    <div className="flex-1 text-2xl">
+    <div className="flex-1">
       <Banner />
 
       <section className="bg-background-section">
