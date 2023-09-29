@@ -17,14 +17,14 @@ function MaratonaSolidariedade() {
         <p>
           Acreditamos no ser humano, por isto o ICOSE criou a <strong>Maratona da Solidariedade</strong>, onde o objetivo 
           é estimular desde criança a prática desta virtude e a propagação em seu entorno de uma corrente 
-          de solidariedade.  Não há intenção de ser uma ação pontual, mas uma ação contínua para a mudança 
+          de solidariedade. Não há intenção de ser uma ação pontual, mas uma ação contínua para a mudança 
           de comportamento, estimulando a cultura de doação permanente e resgatando a consciência do poder 
           de transformação que cada cidadão possui na construção de um mundo melhor.
         </p>
 
         <div className="flex flex-col gap-4">
           <div className="space-y-2">
-            <h1 className="text-2xl text-black">Como funciona?</h1>
+            <h1 className="text-black">Como funciona?</h1>
             <div className="space-y-2">
               <p>
                 O ICOSE leva às escolas a Maratona da Solidariedade, que acontece uma vez ao ano.
@@ -39,7 +39,7 @@ function MaratonaSolidariedade() {
                 </li>
                 <li>
                   <strong>Solidariedade com a comunidade:</strong> Antes da Maratona da Solidariedade 
-                  as crianças buscam padrinhos/madrinhas que doarão um valor por cada 100m caminhados. 
+                  as crianças buscam padrinhos/madrinhas que doarão um valor por cada 100m caminhados.
                   Após a maratona, com os cartões carimbados as crianças mostram aos padrinhos/madrinhas 
                   o esforço feito e solicitam o depósito do valor prometido na conta do ICOSE.
                 </li>
@@ -56,12 +56,12 @@ function MaratonaSolidariedade() {
 
           <div className="space-y-2">
             <p>
-              Gostou? Quer participar? 
+              Gostou? Quer participar?
             </p>
             <ul className="list-disc pl-8">
               <li>
                 <strong>Como cidadão:</strong> você pode aumentar o valor arrecadado 
-                pelas crianças fazendo sua contribuição via PIX mencionando MARATONA 
+                pelas crianças fazendo sua contribuição via PIX mencionando MARATONA 
                 DA SOLIDARIEDADE. <Link to="/doacao" className="text-standard-blue hover:underline">Clique aqui</Link> para realizar sua doação!
               </li>
               <li>

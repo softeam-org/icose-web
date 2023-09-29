@@ -1,6 +1,6 @@
 const Body = ({ children }) => {
   return (
-    <div className="pb-10 pt-10 mx-auto max-w-[80rem] px-12">
+    <div className="text-xl pb-10 pt-10 mx-auto max-w-[80rem] px-6">
       {children}
     </div>
   );
