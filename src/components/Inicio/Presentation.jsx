@@ -4,13 +4,13 @@ import InformativoIcose from "@/assets/InformativoIcose.svg";
 
 function Presentation() {
   const items = [
-    'de forma transparente na diversidade de causas e temas;',
-    'identificando, reunindo, fortalecendo e assessorando as ONG e/ou iniciativas de pessoas físicas que atuem na nossa comunidade de forma responsável;',
-    'promovendo o intercâmbio e parcerias entre organizações da sociedade civil, órgãos públicos e privados e pessoas físicas;',
-    'incentivando a prática da doação, voluntariado e engajamento comunitário;',
-    'promovendo os valores humanos universais, como a ética, a solidariedade, a generosidade entre outros valores;',
-    'fomentando o empreendedorismo e o desenvolvimento de iniciativas inovadoras sociais, culturais, educacionais, produtivas, esportivas e ambientais;',
-    'criando um fundo de recursos que proporcione sustentabilidade de suas ações e constitua um ativo permanente para investimentos socioambientais comunitários em Sergipe.'
+    'De forma transparente na diversidade de causas e temas;',
+    'Identificando, reunindo, fortalecendo e assessorando as ONG e/ou iniciativas de pessoas físicas que atuem na nossa comunidade de forma responsável;',
+    'Promovendo o intercâmbio e parcerias entre organizações da sociedade civil, órgãos públicos e privados e pessoas físicas;',
+    'Incentivando a prática da doação, voluntariado e engajamento comunitário;',
+    'Promovendo os valores humanos universais, como a ética, a solidariedade, a generosidade entre outros valores;',
+    'Fomentando o empreendedorismo e o desenvolvimento de iniciativas inovadoras sociais, culturais, educacionais, produtivas, esportivas e ambientais;',
+    'Criando um fundo de recursos que proporcione sustentabilidade de suas ações e constitua um ativo permanente para investimentos socioambientais comunitários em Sergipe.'
   ];
 
   return (
@@ -41,7 +41,7 @@ function Presentation() {
           />
         </h1>
         <div className="flex flex-col gap-8">
-          <p className="mt-8">
+          <p className="mt-8 font-medium">
             Nossa proposta é atuar EM SERGIPE:
           </p>
           <ArrowList items={items} />
