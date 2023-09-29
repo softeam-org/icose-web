@@ -24,7 +24,7 @@ function MaratonaSolidariedade() {
 
         <div className="flex flex-col gap-4">
           <div className="space-y-2">
-            <h1 className="text-2xl text-black">Como funciona?</h1>
+            <h1 className="text-black">Como funciona?</h1>
             <div className="space-y-2">
               <p>
                 O ICOSE leva às escolas a Maratona da Solidariedade, que acontece uma vez ao ano.

@@ -8,7 +8,7 @@ import Participantes from "@/assets/MapaFIC_ProgramaTT.png";
 
 function Community() {
   return (
-    <div className="flex-1 text-2xl pt-[92px]">
+    <div className="flex-1 pt-[92px]">
       <Body>
         <section className="flex flex-col gap-12">
           <Title content="Institutos Comunitários" />

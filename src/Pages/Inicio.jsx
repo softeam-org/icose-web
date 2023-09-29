@@ -7,7 +7,7 @@ import Community from "@/components/Inicio/Community";
 
 function Home() {
   return (
-    <div className="flex-1 text-2xl">
+    <div className="flex-1">
       <Banner />
 
       <section className="bg-background-section">
@@ -17,7 +17,7 @@ function Home() {
             content="Conheça o ICOSE"
           />
 
-          <div className="flex flex-col gap-10 xl:gap-20 pt-10 xl:pt-20">
+          <div className="flex flex-col gap-10 pt-10">
             <Cards />
             <Presentation />
           </div>
