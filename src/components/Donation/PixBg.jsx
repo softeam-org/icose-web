@@ -4,10 +4,23 @@ import logoImage from "@/assets/LOGO-ICOSE.svg"
 import logoPix from "@/assets/logo-pix.svg"
 import BackgroundWhite from "@/components/Donation/BackgroundWhite"
 import { CopySimple } from "@phosphor-icons/react"
+import { CheckFat  } from "@phosphor-icons/react"
+import React, { useState } from 'react';
 
 
 function PixBg() {
   const chavePix = "50.310.780/0001-44";
+  const [copiado, setCopiado] = useState(false);
+
+  const copiarTextoParaClipboard = () => {
+    navigator.clipboard.writeText(chavePix);
+    setCopiado(true);
+
+    setTimeout(() => {
+      setCopiado(false);
+    }, 1000);
+  };
+
   return (
     <div className="flex flex-col">
       <Title
@@ -41,14 +54,20 @@ function PixBg() {
           CHAVE PIX (CNPJ)
         </h1>
         <BackgroundWhite>
-          <div className="flex">
-            <p className="w-36 text-center md:w-full break-normal">
+          <div className="flex gap-1 relative">
+            <p className="w-32 text-center md:w-full break-normal">
               {chavePix}
             </p>
-            <button onClick={()=>navigator.clipboard.writeText(chavePix)}>
-              <CopySimple></CopySimple>
+            <button className={`transition-transform md:tooltip ${copiado ? 'scale-110'  : ''}`}
+                    data-tip={copiado ? "Copiado!" : "Clique aqui para copiar a chave Pix." }  
+                    onClick={copiarTextoParaClipboard}>
+              {copiado ? ( 
+                <CheckFat className="text-green-500" />
+              ) : (
+                <CopySimple />
+              )}
             </button>
-          </div>  
+          </div>
         </BackgroundWhite>
         <h1 className="text-lg xl:text-xl font-bold">
           CONTA
