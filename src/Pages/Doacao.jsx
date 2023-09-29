@@ -1,6 +1,6 @@
-import womenWorkin from "@/assets/women-working.svg"
+import womenWorkin from "@/assets/women-working.svg";
 import PixBg from "@/components/Donation/PixBg";
-import Body from "@/components/Body"
+import Body from "@/components/Body";
 
 function Donation() {
   return (

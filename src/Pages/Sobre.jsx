@@ -1,5 +1,5 @@
 import Title from "@/components/Title";
-import Body from "@/components/Body"
+import Body from "@/components/Body";
 import MemberCard from "@/components/About/MemberCard";
 import Transparency from "@/components/About/Transparency";
 import { administrators } from "data/administrators";
