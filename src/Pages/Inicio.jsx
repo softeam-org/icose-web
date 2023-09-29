@@ -17,7 +17,7 @@ function Home() {
             content="Conheça o ICOSE"
           />
 
-          <div className="flex flex-col gap-10 xl:gap-20 pt-10 xl:pt-20">
+          <div className="flex flex-col gap-10 pt-10">
             <Cards />
             <Presentation />
           </div>
