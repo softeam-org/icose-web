@@ -1,7 +1,7 @@
-import Body from "@/components/Body"
-import OxenteMulher from "@/components/Projects/Contents/OxenteMulher"
-import MaratonaSolidariedade from "@/components/Projects/Contents/MaratonaSolidariedade"
-import ConhecendoTerritorio from "@/components/Projects/Contents/ConhecendoTerritorio"
+import Body from "@/components/Body";
+import OxenteMulher from "@/components/Projects/Contents/OxenteMulher";
+import MaratonaSolidariedade from "@/components/Projects/Contents/MaratonaSolidariedade";
+import ConhecendoTerritorio from "@/components/Projects/Contents/ConhecendoTerritorio";
 
 function Projects() {
   return (

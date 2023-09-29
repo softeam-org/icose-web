@@ -1,8 +1,8 @@
-import Title from "@/components/Title"
-import Body from "@/components/Body"
-import Banner from "@/components/Inicio/Banner"
-import Cards from "@/components/Inicio/Cards"
-import Presentation from "@/components/Inicio/Presentation"
+import Title from "@/components/Title";
+import Body from "@/components/Body";
+import Banner from "@/components/Inicio/Banner";
+import Cards from "@/components/Inicio/Cards";
+import Presentation from "@/components/Inicio/Presentation"; 
 import Community from "@/components/Inicio/Community";
 
 function Home() {
