@@ -62,7 +62,7 @@ function PixBg() {
                 {icose.cnpj}
               </p>
               <button className={`transition-transform md:tooltip ${copied ? 'scale-110' : ''}`}
-                      data-tip={copied ? "Copiado!" : "Clique aqui para copiar a chave Pix." }  
+                      data-tip={copied ? "Copiado!" : "Copiar a chave Pix." }  
                       onClick={copyToClipboard}>
                 {copied ? <CheckFat className="text-green-500" /> : <CopySimple />}
               </button>
