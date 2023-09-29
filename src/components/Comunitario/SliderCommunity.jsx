@@ -6,7 +6,7 @@ function SliderCommunity({ icon, title, content }) {
         <span className="flex flex-col justify-center">{icon}</span>  
         <span className="mx-auto uppercase">{title}</span>
       </div>
-      <div className="collapse-content text-base px-10 ps-16">
+      <div className="collapse-content text-base px-16">
         {content}
       </div>
     </div>
