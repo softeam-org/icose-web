@@ -3,9 +3,11 @@ import qrCode from "@/assets//qr-code.png"
 import logoImage from "@/assets/LOGO-ICOSE.svg"
 import logoPix from "@/assets/logo-pix.svg"
 import BackgroundWhite from "@/components/Donation/BackgroundWhite"
+import { CopySimple } from "@phosphor-icons/react"
 
 
 function PixBg() {
+  const chavePix = "50.310.780/0001-44";
   return (
     <div className="flex flex-col">
       <Title
@@ -39,9 +41,14 @@ function PixBg() {
           CHAVE PIX (CNPJ)
         </h1>
         <BackgroundWhite>
-          <p className="w-36 text-center md:w-full break-normal">
-            50.310.780/0001-44
-          </p>
+          <div className="flex">
+            <p className="w-36 text-center md:w-full break-normal">
+              {chavePix}
+            </p>
+            <button onClick={()=>navigator.clipboard.writeText(chavePix)}>
+              <CopySimple></CopySimple>
+            </button>
+          </div>  
         </BackgroundWhite>
         <h1 className="text-lg xl:text-xl font-bold">
           CONTA
