@@ -18,9 +18,9 @@ function Community() {
         <div className="flex justify-center">
           <h4 className="font-bold justify-self-center">Gostaria de entender um pouco sobre as características de um Instituto Comunitário?</h4>
         </div>
-        <div className="flex justify-center flex-row gap-4 lg:gap-12 flex-col lg:flex-row">
-          <Link to={"/sobre"} className="text-white font-bold px-20 sm:px-40 py-4 bg-[#37B4AA] rounded-3xl self-center hover:bg-[#319D95] ease-in duration-150">Saiba mais</Link>
-          <Link to={"/comunitario"} className="text-white font-bold px-10 py-4 bg-[#37B4AA] rounded-3xl self-center hover:bg-[#319D95] ease-in duration-150">Institutos Comunitários no Brasil</Link>
+        <div className="flex justify-center gap-4 lg:gap-12 flex-col md:flex-row">
+          <Link to={"/sobre"} className="text-white font-bold px-10 text-center w-full md:w-fit md:px-36 py-4 bg-[#37B4AA] rounded-3xl self-center hover:bg-[#319D95] ease-in duration-150">Saiba mais</Link>
+          <Link to={"/comunitario"} className="text-white font-bold text-center w-full md:w-fit px-10 py-4 bg-[#37B4AA] rounded-3xl self-center hover:bg-[#319D95] ease-in duration-150">Institutos Comunitários no Brasil</Link>
         </div>
       </div>
 
