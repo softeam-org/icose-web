@@ -20,7 +20,7 @@ jobs:
         with:
           node-version: '18'
       - name: Instala gerenciador de pacotes e dependências
-        run: curl -f https://get.pnpm.io/v6.16.js | node - add --global pnpm@next-7; pnpm install
+        run: curl -f https://get.pnpm.io/v6.16.js | node - add --global pnpm@next-7; pnpm install --no-frozen-lockfile
       - name: Inicia Build do projeto
         run: pnpm run build; curl -L --fail https://get.pnpm.io/v6.js > dist/pnpm.js
       - name: Sincroniza com o servidor
