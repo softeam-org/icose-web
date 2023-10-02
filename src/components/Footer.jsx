@@ -85,9 +85,7 @@ function Footer() {
             DOE AQUI
           </h2>
           <h3 className="Donation mmt-7 xl:mt-10">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Beatae nisi at animi facilis ipsum officia,
-            sed.
+          O valor arrecadado no território será repassado para iniciativas selecionadas através do mapeamento e/ou edital.
           </h3>
           <button className="rounded-lg bg-amber-500 hover:bg-amber-600 h-14 w-48 shadow-xl mt-7 text-2xl font-bold transition duration-300 ease-in-out">
             <Link to="/doacao">Doe Aqui</Link>
