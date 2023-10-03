@@ -22,7 +22,7 @@ function PixBg() {
   return (
     <div className="flex flex-col text-lg xl:text-xl">
       <Title
-        content="Faça sua doação"
+        content="Colabore!"
       />
 
       <div className="mt-10 rounded-3xl bg-[#37B4AA] text-white flex flex-col items-center justify-center px-6 sm:px-12 py-8 sm:py-16 gap-3">

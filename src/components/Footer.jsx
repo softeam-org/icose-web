@@ -5,6 +5,7 @@ import { icose } from "data/icose";
 import { Link } from "react-router-dom";
 import { Envelope } from "@phosphor-icons/react";
 import { Phone } from "@phosphor-icons/react";
+import { InstagramLogo } from "@phosphor-icons/react";
 import { ArrowRight } from "@phosphor-icons/react";
 
 function Footer() {
@@ -34,6 +35,10 @@ function Footer() {
           <h2 className="flex gap-2 items-center text-lg xl:text-base">
             <Envelope size={32} />
             <a href={`mailto:${icose.email}?body=Diga-nos o que precisa`}>{icose.email}</a>
+          </h2>
+          <h2 className="flex gap-2 items-center text-lg xl:text-base">
+            <InstagramLogo size={32} />
+            <a href={`https://www.instagram.com/institutocomunitariodesergipe/`} target="_blank">{icose.instagram}</a>
           </h2>
         </div>
         <div className="font-inter text-white mt-7 md:mt-14 xl:mt-14 md:w-42 xl:w-52">
@@ -85,9 +90,7 @@ function Footer() {
             DOE AQUI
           </h2>
           <h3 className="Donation mmt-7 xl:mt-10">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Beatae nisi at animi facilis ipsum officia,
-            sed.
+          O valor arrecadado no território será repassado para iniciativas selecionadas através do mapeamento e/ou edital.
           </h3>
           <button className="rounded-lg bg-amber-500 hover:bg-amber-600 h-14 w-48 shadow-xl mt-7 text-2xl font-bold transition duration-300 ease-in-out">
             <Link to="/doacao">Doe Aqui</Link>
