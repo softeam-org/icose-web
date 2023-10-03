@@ -72,7 +72,8 @@ function Footer() {
             </ul>
           </div>
         </div>
-        <div className="font-inter text-white mt-7 md:mt-14 xl:mt-14 md:w-64 w-72">
+
+        {/*<div className="font-inter text-white mt-7 md:mt-14 xl:mt-14 md:w-64 w-72">
           <h2 className="font-bold">
             TITULO
           </h2>
@@ -84,7 +85,8 @@ function Footer() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Beatae nisi at animi.
           </h3>
-        </div>
+        </div>*/}
+
         <div className="font-inter text-white mt-7 md:mt-14 xl:mt-14 md:w-64 w-72">
           <h2 className="font-bold">
             DOE AQUI
@@ -97,6 +99,7 @@ function Footer() {
           </button>
         </div>
       </div>
+
       <div className="bg-stone-900">
         <div className="flex flex-col justify-arround gap-5 md:flex-row font-inter mx-auto mx-5 md:mx-20 xl:mx-32 text-white text-sm place-content-center h-32 md:h-20 items-center md:justify-between">
           <h3 className='text-xs xl:text-base mx-2 text-center w-auto'>
