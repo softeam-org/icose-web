@@ -3,6 +3,7 @@ import OxenteMulher from "@/components/Projects/Contents/OxenteMulher";
 import MaratonaSolidariedade from "@/components/Projects/Contents/MaratonaSolidariedade";
 import ConhecendoTerritorio from "@/components/Projects/Contents/ConhecendoTerritorio";
 import AtividadesSolidarias from "@/components/Projects/Contents/AtividadesSolidarias";
+import CadaFotografia from "@/components/Projects/Contents/CadaFotografia";
 
 function Projects() {
   return (
@@ -13,6 +14,7 @@ function Projects() {
           <MaratonaSolidariedade />
           <AtividadesSolidarias />
           <ConhecendoTerritorio />
+          <CadaFotografia />
         </div>
       </Body>
     </section>
