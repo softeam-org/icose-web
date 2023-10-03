@@ -23,7 +23,7 @@ function MaratonaSolidariedade() {
 
         <div className="flex flex-col gap-4">
           <div className="space-y-2">
-            <h1 className="text-2xl text-black">Como funciona?</h1>
+            <h1 className="text-black">Como funciona?</h1>
             <div className="space-y-2">
               <p>
                 O ICOSE leva às escolas a Maratona da Solidariedade, que acontece uma vez ao ano.
@@ -56,7 +56,7 @@ function MaratonaSolidariedade() {
             <ul className="list-disc pl-8">
               <li>
                 <strong>Como cidadão:</strong> você pode aumentar o valor arrecadado 
-                pelas crianças fazendo sua contribuição via PIX mencionando MARATONA 
+                pelas crianças fazendo sua contribuição via PIX mencionando MARATONA 
                 DA SOLIDARIEDADE. <Link to="/doacao" className="text-standard-blue hover:underline">Clique aqui</Link> para realizar sua doação!
               </li>
               <li>
