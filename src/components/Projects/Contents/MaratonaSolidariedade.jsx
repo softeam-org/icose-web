@@ -1,3 +1,4 @@
+import { icose } from "data/icose.js"
 import Project from "@/components/Projects/Project";
 import { Link } from "react-router-dom";
 
@@ -17,9 +18,7 @@ function MaratonaSolidariedade() {
         <p>
           Acreditamos no ser humano, por isto o ICOSE criou a <strong>Maratona da Solidariedade</strong>, onde o objetivo 
           é estimular desde criança a prática desta virtude e a propagação em seu entorno de uma corrente 
-          de solidariedade. Não há intenção de ser uma ação pontual, mas uma ação contínua para a mudança 
-          de comportamento, estimulando a cultura de doação permanente e resgatando a consciência do poder 
-          de transformação que cada cidadão possui na construção de um mundo melhor.
+          de solidariedade.
         </p>
 
         <div className="flex flex-col gap-4">
@@ -33,15 +32,11 @@ function MaratonaSolidariedade() {
                 <li>
                   <strong>Solidariedade entre as crianças:</strong> O ICOSE visita a escola e lança 
                   o desafio às crianças para caminhar 42.195m (Maratona). Apenas unidas, somando a 
-                  distância que cada uma percorreu, elas conseguem atingir o objetivo. O evento ocorre 
-                  dentro da escola e cada criança recebe um cartão de participação que é carimbado a 
-                  cada 100m caminhados nos postos de controle de quilometragem. 
+                  distância que cada uma percorreu, elas conseguem atingir o objetivo.
                 </li>
                 <li>
                   <strong>Solidariedade com a comunidade:</strong> Antes da Maratona da Solidariedade 
-                  as crianças buscam padrinhos/madrinhas que doarão um valor por cada 100m caminhados.
-                  Após a maratona, com os cartões carimbados as crianças mostram aos padrinhos/madrinhas 
-                  o esforço feito e solicitam o depósito do valor prometido na conta do ICOSE.
+                  as crianças buscam padrinhos/madrinhas que doarão um valor por cada 100m caminhados. 
                 </li>
                 <li>
                   <strong>Cidadania:</strong> Após a conclusão do recebimento das doações, o ICOSE reverte 
@@ -56,7 +51,7 @@ function MaratonaSolidariedade() {
 
           <div className="space-y-2">
             <p>
-              Gostou? Quer participar?
+              Gostou? Quer saber mais? Sua escola está interessada em participar?
             </p>
             <ul className="list-disc pl-8">
               <li>
@@ -66,7 +61,7 @@ function MaratonaSolidariedade() {
               </li>
               <li>
                 <strong>Como escola:</strong> Inscrições abertas para 2024, entre em 
-                contato conosco para agendar uma visita.
+                contato conosco para agendar uma visita. <a className="font-bold" href={`mailto:${icose.email}?body=Diga-nos o que precisa`}>{icose.email}</a>
               </li>
             </ul>
           </div>
