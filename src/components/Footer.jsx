@@ -5,6 +5,7 @@ import { icose } from "data/icose";
 import { Link } from "react-router-dom";
 import { Envelope } from "@phosphor-icons/react";
 import { Phone } from "@phosphor-icons/react";
+import { InstagramLogo } from "@phosphor-icons/react";
 import { ArrowRight } from "@phosphor-icons/react";
 
 function Footer() {
@@ -34,6 +35,10 @@ function Footer() {
           <h2 className="flex gap-2 items-center text-lg xl:text-base">
             <Envelope size={32} />
             <a href={`mailto:${icose.email}?body=Diga-nos o que precisa`}>{icose.email}</a>
+          </h2>
+          <h2 className="flex gap-2 items-center text-lg xl:text-base">
+            <InstagramLogo size={32} />
+            <a href={`https://www.instagram.com/institutocomunitariodesergipe/`} target="_blank">{icose.instagram}</a>
           </h2>
         </div>
         <div className="font-inter text-white mt-7 md:mt-14 xl:mt-14 md:w-42 xl:w-52">

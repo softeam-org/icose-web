@@ -1,4 +1,4 @@
-import { Envelope, Phone } from "@phosphor-icons/react";
+import { Envelope, Phone, InstagramLogo } from "@phosphor-icons/react";
 import Title from "@/components/Title";
 import { icose } from "data/icose";
 
@@ -21,6 +21,10 @@ function contactUs() {
             <p className="text-center">(Para recados)</p>
           </div>
         </span>
+        <div className="flex gap-2 items-center">
+          <InstagramLogo size={32} />
+          <a href={`https://www.instagram.com/institutocomunitariodesergipe/`} target="_blank">{icose.instagram}</a>
+        </div>
       </div>
     </div>
   );
