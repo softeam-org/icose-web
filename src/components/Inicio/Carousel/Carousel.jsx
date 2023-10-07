@@ -12,6 +12,8 @@ import './Carousel.css';
 // imports instagram post components
 import InstagramCard from './instagram-card';
 
+const maxLength = 8;
+
 function Carousel() {
   const [data, setData] = useState([]);
   useEffect(() => {
@@ -21,7 +23,7 @@ function Carousel() {
         const fields = "media_url,media_type,caption,permalink";
         const url = `https://graph.instagram.com/me/media?access_token=${token}&fields=${fields}`;
         const response = await axios.get(url);
-        const responseData = response.data.data.filter((post) => post.media_type === "IMAGE");
+        const responseData = response.data.data.slice(0, maxLength);
         setData(responseData);
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -58,13 +60,13 @@ function Carousel() {
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >   
-        {data.map((slide) => (
+        {data.map((post) => (
           <SwiperSlide key={ crypto.randomUUID() } className='w-10 pb-16 border-black'>
             <div className='custom-slide'>
               <InstagramCard
-                url={slide.media_url}
-                caption={slide.caption}
-                permalink={slide.permalink}
+                url={post.media_url}
+                caption={post.caption}
+                permalink={post.permalink}
               /> 
             </div>
           </SwiperSlide>  
