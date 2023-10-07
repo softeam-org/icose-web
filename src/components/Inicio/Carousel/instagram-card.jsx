@@ -5,9 +5,9 @@ function InstagramCard ({ url, caption, permalink }) {
     <a href={permalink}>
       <div className="flex flex-col justify-around items-center p-4 h-[25rem] shadow-lg rounded-2xl">
         <img src={url} alt="instagram post" className="object-fill h-[16rem] w-[16rem]"></img>
-        <h1>
-          {caption}
-        </h1>
+        <p className="text-xl">
+          {caption.length > 50 ? `${caption.substring(0, 50)}...` : caption}
+        </p>
       </div>
     </a>  
   );
