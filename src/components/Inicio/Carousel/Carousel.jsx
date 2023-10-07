@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import axios from 'axios';
 //imports swiper
 import {Pagination, Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -9,17 +9,19 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import './Carousel.css';
-
+// imports instagram post components
+import InstagramCard from './instagram-card';
 
 function Carousel() {
   const [data, setData] = useState([]);
-
   useEffect(() => {
-    
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:5173/data/news.js');
-        const responseData = await response.json();
+        const token = import.meta.env.VITE_INSTAGRAM_TOKEN;
+        const fields = "media_url,media_type,caption,permalink";
+        const url = `https://graph.instagram.com/me/media?access_token=${token}&fields=${fields}`;
+        const response = await axios.get(url);
+        const responseData = response.data.data.filter((post) => post.media_type === "IMAGE");
         setData(responseData);
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -28,11 +30,11 @@ function Carousel() {
     fetchData();
   }, []);  
 
-    if (!data || !data.length) return null;
+  if (!data || !data.length) return null;
   return(
     <div>
       <Swiper
-        spaceBetween={50}
+        spaceBetween={40}
         slidesPerView={1}
         navigation
         pagination={{
@@ -56,22 +58,17 @@ function Carousel() {
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >   
-      {data.map((slide) => (
-        <SwiperSlide key={slide.id} className='w-10 pb-16 ' >
-          <div className='custom-slide'>
-            <img src={slide.image} className=" w-full" />
-            <div className="w-full flex flex-col space-y-1.5 md:space-y-2 py-3 ">
-                <h2 className="font-inter font-semibold text-standard-blue text-xs sm:text-base md:text-2xl xl:text-2xl text-left">
-                  {slide.title}
-                </h2>
-                <p className="text-xs">{slide.date}</p>
-                <p className="text-xs sm:text-sm md:text-base w-full h-full ">
-                  {slide.content}
-                </p>
-            </div> 
-          </div>
+        {data.map((slide) => (
+          <SwiperSlide key={ crypto.randomUUID() } className='w-10 pb-16 border-black'>
+            <div className='custom-slide'>
+              <InstagramCard
+                url={slide.media_url}
+                caption={slide.caption}
+                permalink={slide.permalink}
+              /> 
+            </div>
           </SwiperSlide>  
-      ))}
+        ))}
       </Swiper>
     </div>
   );

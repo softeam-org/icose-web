@@ -7,10 +7,10 @@
   background-color: black;
 }
 .swiper-button-next{
-  right: var(--swiper-navigation-sides-offset, 1px);
+  left: 50; 
   top: var(--swiper-navigation-top-offset, 40%);
 }
 .swiper-button-prev{
-  left: var(--swiper-navigation-sides-offset, 1px);
+  right: 50; 
   top: var(--swiper-navigation-top-offset, 40%);
 }
