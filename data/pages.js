@@ -10,19 +10,14 @@ export const pages = [
     filename: "Sobre",
   },
   {
-    name: "Editais",
-    route: "/editais",
-    filename: "Editais",
+    name: "Projetos",
+    route: "/projetos",
+    filename: "Projetos",
   },
   {
-    name: "Transferências",
-    route: "/transferencias",
-    filename: "Transferencias",
-  },
-  {
-    name: "Parceiros",
-    route: "/parceiros",
-    filename: "Parceiros",
+    name: "Comunitário",
+    route: "/comunitario",
+    filename: "Comunitario",
   },
   {
     name: "Doe Aqui",

@@ -1,6 +1,6 @@
 import { List, X } from "@phosphor-icons/react";
 import { useState } from "react";
-import { pages } from "data/pages"
+import { pages } from "data/pages";
 import Overlay from "@/components/Overlay";
 import PageLink from "./PageLink";
 

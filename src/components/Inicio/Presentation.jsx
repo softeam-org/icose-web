@@ -3,15 +3,14 @@ import Title from "@/components/Title"
 import InformativoIcose from "@/assets/InformativoIcose.svg";
 
 function Presentation() {
-
   const items = [
-    'de forma transparente na diversidade de causas e temas;',
-    'identificar, reunir, fortalecer e assessorar as ONG e/ou iniciativas de pessoas físicas que atuem na nossa comunidade de forma responsável;',
-    'promover o intercâmbio e parcerias entre organizações da sociedade civil, órgãos públicos e privados e pessoas físicas;',
-    'incentivar a prática da doação, voluntariado e engajamento comunitário;',
-    'promover os valores humanos universais, como a ética, a solidariedade, a generosidade entre outros valores;',
-    'fomentar o empreendedorismo e o desenvolvimento de iniciativas inovadoras sociais, culturais, educacionais, produtivas, esportivas e ambientais;',
-    'criar um fundo de recursos que proporcione sustentabilidade de suas ações e constitua um ativo permanente para investimentos socioambientais comunitários em Sergipe.'
+    'De forma transparente na diversidade de causas e temas;',
+    'Identificando, reunindo, fortalecendo e assessorando as ONG e/ou iniciativas de pessoas físicas que atuem na nossa comunidade de forma responsável;',
+    'Promovendo o intercâmbio e parcerias entre organizações da sociedade civil, órgãos públicos e privados e pessoas físicas;',
+    'Incentivando a prática da doação, voluntariado e engajamento comunitário;',
+    'Promovendo os valores humanos universais, como a ética, a solidariedade, a generosidade entre outros valores;',
+    'Fomentando o empreendedorismo e o desenvolvimento de iniciativas inovadoras sociais, culturais, educacionais, produtivas, esportivas e ambientais;',
+    'Criando um fundo de recursos que proporcione sustentabilidade de suas ações e constitua um ativo permanente para investimentos socioambientais comunitários em Sergipe.'
   ];
 
   return (
@@ -23,14 +22,14 @@ function Presentation() {
             content="No Que Acreditamos"
           />
         </h1>
-        <div className="flex flex-col gap-8 text-xl">
+        <div className="flex flex-col gap-8">
           <p className="mt-8">
-            Acreditamos que a REAL TRANSFORMAÇÃO SOCIAL, requer VALORES HUMANOS e ENGAJAMENTO da comunidade,
-            um processo que se inicia no humano e se expande através das suas AÇÕES na comunidade.
+            Acreditamos que a <strong>REAL TRANSFORMAÇÃO SOCIAL</strong>, requer <strong>VALORES HUMANOS</strong> e <strong>ENGAJAMENTO</strong> da comunidade,
+            um processo que se inicia no humano e se expande através das suas <strong>AÇÕES</strong> na comunidade.
           </p>
           <p>
-            O Instituto Comunitário de Sergipe – ICOSE foi criado para trabalhar COM a comunidade,
-            não para a comunidade. JUNTOS somos mais criativos, mais eficazes e mais fortes.
+            O Instituto Comunitário de Sergipe – ICOSE foi criado para trabalhar <strong>COM</strong> a comunidade,
+            não para a comunidade. <strong>JUNTOS</strong> somos mais criativos, mais eficazes e mais fortes.
           </p>
         </div>
       </div>
@@ -41,8 +40,8 @@ function Presentation() {
             content="Proposta de Atuação"
           />
         </h1>
-        <div className="flex flex-col gap-8 text-xl">
-          <p className="mt-8">
+        <div className="flex flex-col gap-8">
+          <p className="mt-8 font-medium">
             Nossa proposta é atuar EM SERGIPE:
           </p>
           <ArrowList items={items} />
@@ -56,4 +55,3 @@ function Presentation() {
 }
 
 export default Presentation;
-
