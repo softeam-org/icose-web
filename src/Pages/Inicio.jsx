@@ -25,11 +25,9 @@ function Home() {
 
         </Body>
       </section>
-
       <Body>
         <Community />
       </Body>
-
       <section className="bg-background-section">
         <Carousel />
       </section>

@@ -4,7 +4,7 @@ import Title from "@/components/Title";
 import AccordionItem from "@/components/AccordionItem";
 
 import TransformandoTerritorios from "@/assets/TransformandoTerritorios.png";
-import Participantes from "@/assets/MapaFIC_ProgramaTT.png";
+import Participantes from "@/assets/MapaFIC_ProgramaTT.jpg";
 
 function Community() {
   return (
