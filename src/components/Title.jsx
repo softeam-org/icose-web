@@ -1,7 +1,7 @@
 import setColor from "@/utils/setColor"
 
 function Title({color, centeredTitle, content}) {
-  const underlinePosition = centeredTitle ? "flex-col" : "";
+  const underlinePosition = centeredTitle ? "flex-col text-center" : "";
   const underlineColor = setColor(color);
 
   return ( 
