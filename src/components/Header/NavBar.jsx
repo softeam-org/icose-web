@@ -1,6 +1,6 @@
 import { List, X } from "@phosphor-icons/react";
 import { useState } from "react";
-import { pages } from "data/pages"
+import { pages } from "data/pages";
 import Overlay from "@/components/Overlay";
 import PageLink from "./PageLink";
 
@@ -34,7 +34,7 @@ function NavBar() {
             size={32}
             weight="bold"
           />
-          <ul className="flex flex-col items-start font-normal gap-10 xl:flex-row text-xl">
+          <ul className="flex flex-col items-start font-black gap-10 xl:flex-row text-xl">
             {links}
           </ul>
         </div>
