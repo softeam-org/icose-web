@@ -8,12 +8,12 @@ function OxenteMulher() {
       </p>
       <p>
         Nossa jornada começa com o diálogo com a comunidade e a semente de um sonho mútuo: fortalecer 
-        mulheres em situação de vulnerabilidade. Sabemos que o conhecimento é uma semente poderosa. 
-        Assim, juntas, decidimos trazer palestras sobre saúde, oficinas e cursos de empreendedorismo, onde
+        mulheres em situação de vulnerabilidade. Sabemos que o <strong>conhecimento</strong> é uma semente poderosa. 
+        Assim, juntas, decidimos trazer palestras sobre saúde, oficinas e <strong>cursos de empreendedorismo</strong>, onde
         mulheres podem plantar as bases sólidas para seus negócios, colhendo frutos de independência e confiança.
       </p>
       <p>
-        Em nossa jornada, percebemos que para crescermos juntos, devemos compartilhar. A horta comunitária
+        Em nossa jornada, percebemos que para crescermos juntos, devemos compartilhar. A <strong>horta comunitária</strong>
         é um símbolo de união e colaboração, onde cada mulher cultiva não apenas vegetais, mas também amizade,
         apoio mútuo e conhecimento sobre a importância da natureza.
       </p>
