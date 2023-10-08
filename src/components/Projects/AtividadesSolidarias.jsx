@@ -2,8 +2,7 @@ function AtividadesSolidarias() {
   return (
     <p> 
       Trata-se de uma adaptação da Maratona da Solidariedade a Jornada da Criança realizada numa escola particular em Aracaju.
-      <br/>
-      Substitui-se a caminhada por atividades diversificadas na quadra esportiva da escola
+      Substitui-se a caminhada por atividades diversificadas na quadra esportiva da escola.
     </p>
   );
 }
