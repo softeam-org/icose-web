@@ -1,10 +1,15 @@
+import womenWorkin from "@/assets/women-working.jpg";
+import PixBg from "@/components/Donation/PixBg";
+import Body from "@/components/Body";
+
 function Donation() {
   return (
-    <div className="flex-1 flex justify-center items-center text-5xl">
-      <div> Work in progress... 🚧🏗️ </div>
+    <div className="pt-20">
+      <Body>
+        <PixBg/>
+      </Body>
     </div>
   );
 }
 
 export default Donation;
-

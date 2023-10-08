@@ -1,18 +1,22 @@
-import Title from "@/components/Title";
-import ProjectRender from "@/components/Projects/ProjectRender";
+import Body from "@/components/Body";
+import OxenteMulher from "@/components/Projects/Contents/OxenteMulher";
+import MaratonaSolidariedade from "@/components/Projects/Contents/MaratonaSolidariedade";
+import ConhecendoTerritorio from "@/components/Projects/Contents/ConhecendoTerritorio";
+import AtividadesSolidarias from "@/components/Projects/Contents/AtividadesSolidarias";
+import CadaFotografia from "@/components/Projects/Contents/CadaFotografia";
 
 function Projects() {
   return (
-    <section className="bg-background-section ">
-      <div className="flex flex-col gap-8 xl:gap-8 pb-10 pt-10 xl:pt-20 xl:pb-20 mx-auto max-w-[100rem] px-20">
-        <h1 className="pb-2">
-          <Title 
-            color="standard-blue" 
-            content="Projetos" 
-          />
-        </h1>
-        <ProjectRender />
-      </div>
+    <section className="bg-background-section flex-1 pt-[92px]">
+      <Body>
+        <div className="flex flex-col gap-8 xl:gap-8 ">
+          <OxenteMulher />
+          <MaratonaSolidariedade />
+          <AtividadesSolidarias />
+          <ConhecendoTerritorio />
+          <CadaFotografia />
+        </div>
+      </Body>
     </section>
   );
 }

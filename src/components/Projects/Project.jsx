@@ -1,15 +1,12 @@
-import { lazy, Suspense } from "react";
-import Loading from "@/components/Loading";
+import Title from "@/components/Title";
 
-function Project({ title: projectTitle , file: projectFileName }) {
+function Project({ title, children }) {
  
-  const ProjectContent = lazy(() => import(`./Contents/${projectFileName}.jsx`));
-
   return (
-   <Suspense fallback={<Loading />}>
-      <h2 className="font-bold mb-6">{projectTitle}</h2>
-      <ProjectContent />
-    </Suspense>
+    <div className="flex flex-col gap-8">
+      <Title content={title}/>
+      {children}
+    </div>
   )
 }
 

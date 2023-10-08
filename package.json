@@ -11,9 +11,12 @@
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.0.9",
+    "axios": "^1.5.1",
+    "daisyui": "^3.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.11.2"
+    "react-router-dom": "^6.11.2",
+    "swiper": "^10.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
