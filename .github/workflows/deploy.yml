@@ -5,7 +5,7 @@ on:
     branches:
       - main
 env:
-  VITE_INSTAGRAM_TOKEN: ${{ secrets.VITE_INSTAGRAM_TOKEN }}
+  VITE_INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
   
 jobs:
   deploy:
