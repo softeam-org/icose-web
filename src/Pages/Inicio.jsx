@@ -2,6 +2,7 @@ import Title from "@/components/Title";
 import Body from "@/components/Body";
 import Banner from "@/components/Inicio/Banner";
 import Cards from "@/components/Inicio/Cards";
+import Carousel from "@/components/Inicio/Carousel/Carousel";
 import Presentation from "@/components/Inicio/Presentation"; 
 import Community from "@/components/Inicio/Community";
 
@@ -24,10 +25,12 @@ function Home() {
 
         </Body>
       </section>
-
       <Body>
         <Community />
       </Body>
+      <section className="bg-background-section">
+        <Carousel />
+      </section>
 
     </div>
   );

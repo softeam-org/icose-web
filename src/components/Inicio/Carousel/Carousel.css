@@ -1,0 +1,17 @@
+.swiper{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.swiper-pagination-bullet-active{
+  background-color: black;
+}
+.swiper-button-next{
+  left: 50; 
+  right: 0;
+  top: var(--swiper-navigation-top-offset, 40%);
+}
+.swiper-button-prev{
+  left: 0;
+  right: 50; 
+  top: var(--swiper-navigation-top-offset, 40%);
+}
