@@ -26,6 +26,7 @@ function About() {
     <div className="bg-background-section pt-[92px]">
       <Body>
         <section className="flex flex-col gap-16">
+          <Transparency/>
           <div className="flex flex-col gap-10">
             <Title
               content="Membros do Conselho Administrativo"
@@ -36,15 +37,10 @@ function About() {
           </div>
 
           <div className="flex flex-col gap-10">
-            <Title
-              color="#F59E0B"
-              content="Associados"
-            />  
             <div className="flex flex-col gap-10">
               <Title
                 color="#365314"
                 content="Membros do Conselho Fiscal"
-                centeredTitle={true}
               />  
               <div className="space-y-4">
                 {fiscalCouncilList}
@@ -52,8 +48,6 @@ function About() {
             </div>
 
           </div>  
-
-          <Transparency/>
         </section>
       </Body>
     </div>

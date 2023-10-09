@@ -24,7 +24,7 @@ function OxenteMulher() {
       </p>
       <p>
         Lançamento do Projeto na Plataforma Benfeitoria para captação de recursos no dia 9 de outubro 2023.
-        <span> <a href="https://benfeitoria.com/sergipanasemfoco" className="text-standard-blue hover:underline text-black">Clique aqui</a> </span>
+        <span> <a href="https://benfeitoria.com/sergipanasemfoco" target="_blank" className="text-standard-blue hover:underline text-black">Clique aqui</a> </span>
         para acesar.
       </p>
     </div>
