@@ -1,4 +1,3 @@
-import womenWorkin from "@/assets/women-working.jpg";
 import PixBg from "@/components/Donation/PixBg";
 import Body from "@/components/Body";
 
