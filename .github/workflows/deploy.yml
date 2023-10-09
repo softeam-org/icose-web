@@ -4,7 +4,9 @@ on:
   push:
     branches:
       - main
-
+env:
+  VITE_INSTAGRAM_TOKEN: ${{ secrets.VITE_INSTAGRAM_TOKEN }}
+  
 jobs:
   deploy:
     name: Deploy no Hostgator
