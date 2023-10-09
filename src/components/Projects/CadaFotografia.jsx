@@ -19,7 +19,7 @@ function CadaFotografia() {
         de frente. É sobre mostrar a força que pulsa em nosso estado.
       </p>
       <p>
-        Este projeto faz parte da Campanha Coletiva no site da Benfeitoria. <a href="https://benfeitoria.com/sergipanasemfoco" className="text-standard-blue hover:underline text-black">Clique aqui</a> para realizar sua doação!
+        Este projeto faz parte da Campanha Coletiva no site da Benfeitoria. <a href="https://benfeitoria.com/sergipanasemfoco" target="_blank" className="text-standard-blue hover:underline text-black">Clique aqui</a> para realizar sua doação!
       </p>
     </div>
   );
