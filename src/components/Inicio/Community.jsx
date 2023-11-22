@@ -20,7 +20,7 @@ function Community() {
         <div>
           <p>Se você faz um trabalho com impacto positivo na sua comunidade (não precisa ter CNPJ)
             ou se você participa de uma ONG em Sergipe sua história nos interessa.
-            Participe do nosso mapeamento preenchendo <a href="https://forms.gle/BkfZzabzkGuBWuMp6"
+            Participe do nosso mapeamento preenchendo <a href="https://forms.gle/FNwejVq9X8kxUYEx8"
               target="_blank"
               class="text-blue-500 font-bold hover:underline">este formulário</a>.
           </p>
