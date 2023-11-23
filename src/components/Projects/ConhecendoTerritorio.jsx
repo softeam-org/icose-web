@@ -12,7 +12,7 @@ function ConhecendoTerritorio() {
         inclusive para a construção de futuros editais e repasse de verbas.
       </p>
       <div className="flex justify-center">
-        <a href="https://forms.gle/BkfZzabzkGuBWuMp6" target="_blank" rel="noopener noreferrer">
+        <a href="https://forms.gle/FNwejVq9X8kxUYEx8" target="_blank" rel="noopener noreferrer">
           <button className="bg-blue-700 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded inline-block mt-2">
             Preencher formulário
           </button>
