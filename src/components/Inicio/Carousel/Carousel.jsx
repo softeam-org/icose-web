@@ -25,7 +25,7 @@ function Carousel() {
         const fields = "media_url,media_type,caption,permalink";
         const url = `https://graph.instagram.com/me/media?access_token=${token}&fields=${fields}`;
         const response = await axios.get(url);
-        const responseData = response.data.data.slice(0, maxLength);
+        const responseData = response.data.data.filter((post) => post.media_type === "IMAGE").slice(0, maxLength);
         setData(responseData);
       } catch (error) {
         console.error('Error fetching data:', error);
