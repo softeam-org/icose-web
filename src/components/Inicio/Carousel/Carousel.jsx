@@ -16,7 +16,7 @@ import InstagramCard from './instagram-card';
 
 const maxLength = 8;
 
-function Carousel() {
+function Carousel() { 
   const [data, setData] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
@@ -25,8 +25,11 @@ function Carousel() {
         const fields = "media_url,media_type,caption,permalink";
         const url = `https://graph.instagram.com/me/media?access_token=${token}&fields=${fields}`;
         const response = await axios.get(url);
-        const responseData = response.data.data.slice(0, maxLength);
-        setData(responseData);
+        // garante que a legenda da foto existe
+        const caption = response.data.data.filter((post) => post.caption ? true : false)
+        // garante que o tipo de conteudo é imagem
+        const images = caption.filter((post) => post.media_type != "VIDEO").slice(0,maxLength);
+        setData(images);
       } catch (error) {
         console.error('Error fetching data:', error);
       }
