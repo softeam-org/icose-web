@@ -25,7 +25,7 @@ function Presentation() {
         <div className="flex flex-col gap-8">
           <p className="mt-8">
             Acreditamos que a <strong>REAL TRANSFORMAÇÃO SOCIAL</strong>, requer <strong>VALORES HUMANOS</strong> e <strong>ENGAJAMENTO</strong> da comunidade,
-            um processo que se inicia no humano e se expande através das suas <strong>AÇÕES</strong> na comunidade.
+            um processo que se inicia no ser humano e se expande através das suas <strong>AÇÕES</strong> na comunidade.
           </p>
           <p>
             O Instituto Comunitário de Sergipe – ICOSE foi criado para trabalhar <strong>COM</strong> a comunidade,
