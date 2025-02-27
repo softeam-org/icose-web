@@ -1,5 +1,5 @@
 import map from "@/assets/map.svg"
-import Logo_Icose_2 from "@/assets/Logo_Icose_2.svg"
+import Logo_Icose_2 from "@/assets/ICOSE-LOGO-VERT.png"
 
 function Banner() {
   return (
@@ -7,6 +7,7 @@ function Banner() {
       <div className="flex gap-10 pt-[92px] px-12 items-center lg:h-[75vh]">
         <div className="hidden md:flex items-center justify-center flex-1">
           <img
+          className="max-h-[32vh]"
             src={Logo_Icose_2}
             alt="Logo Icose"
           />
